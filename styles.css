@@ -1,0 +1,10 @@
+.notion-navbar, .notion-header, .notion-toggle {
+  display: none !important;
+}
+
+.super-content {
+  padding: 46px 0 0 40px !important;
+  margin: 0 auto !important;
+  max-width: 90% !important;
+  width: 1180px !important;
+}
