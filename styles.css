@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('PlusJakartaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+  font-family: 'Plus Jakarta Sans' !important;
+}
+
+
 .notion-navbar,
 .notion-toggle,
 .notion-collection__header,
@@ -25,6 +39,7 @@ notion-collection-gallery {
 
 .super-content {
     padding: 0px !important;
+    max-width: 1440px !importa
 }
 
 .notion-text {
@@ -69,6 +84,26 @@ notion-collection-gallery {
 
 }
 
+/*  For allowing content links */
+.notion-collection-card__anchor {
+    z-index: -10 !important;
+}
+
+/* link styles */
+
+.notion-link {
+    color: white !important;
+    border-bottom: 1px solid rgba(255,255,255,1) !important;
+    opacity: 1 !important;
+    transition: all 0.3s !important;
+}
+
+.notion-link:hover {
+    border-bottom: 1px solid rgba(255,255,255,0.5) !important;
+    opacity: 0.5 !important;
+    transition: all 0.3s !important;
+
+}
 
 .notion-property__title {
     padding: 0px 0px 8px 80px !important;
