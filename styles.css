@@ -6,6 +6,8 @@
     display: none !important;
 }
 
+
+
 /* Hero */
 notion-collection-gallery {
     grid-template-columns: 1fr !important;
@@ -20,9 +22,22 @@ notion-collection-gallery {
     height: 100% !important;
 }
 
+.notion-collection-board {
+    border-top: none !important;
+}
 
 
+.notion-collection-board__column-header {
+    display: none !important;
+}
 
+.notion-header {
+    display: none !important;
+}
+
+.notion-collection-card {
+
+}
 
 
 /* Projects gallery */
