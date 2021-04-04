@@ -24,7 +24,7 @@
 
 
 /* Hero */
-notion-collection-gallery {
+.notion-collection-gallery {
     grid-template-columns: 1fr !important;
     grid-gap: 40px !important;
     padding: 0 !important;
