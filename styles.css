@@ -107,23 +107,6 @@
 }
 
 
-
-/* -------- Selected Work -------- */
-
-/* Selected work */
-.notion-collection-gallery {
-    grid-template-columns: 1fr !important;
-    grid-gap: 40px !important;
-    padding: 0 !important;
-    max-width: 1280px !important;
-    margin: 0 auto !important;
-}
-
-
-
-
-
-
 /* Removes padding from sourounding hero containers */
 
 .notion-collection-board {
@@ -132,6 +115,7 @@
 }
 
 
+/* -------- Sort -------- */
 
 /* Hides board header */
 
@@ -172,7 +156,27 @@
 
 
 
-/* Projects gallery */
+/* -------- Selected Work -------- */
+
+
+.notion-collection-gallery {
+    grid-template-columns: 1fr !important;
+/*     grid-gap: 80px !important; */
+    padding: 0 !important;
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+    padding: 0px 80px !important;
+}
+
+.gallery {
+    margin: 80px 0px !important;
+
+}
+
+
+
+
+/* Projects gallery (traf) */
 /* .notion-collection-gallery {
     grid-template-columns: 1fr !important;
     grid-gap: 40px !important;
