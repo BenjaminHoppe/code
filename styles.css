@@ -73,7 +73,7 @@
 
  .notion-collection-card board, .no-click > .notion-property__title {
     padding: 0px 0px 8px 80px !important;
-    font-size: 20px !importan t;
+    font-size: 20px !important;
     font-weight: 400 !important;
     color: white !important;
     margin-top: !important;
@@ -114,6 +114,15 @@
     padding: 0px !important;
 }
 
+/* Hero content container */
+.board, .no-click {
+    display: flex !important;
+    flex-direction: column  !important;
+    justify-content: flex-end !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
+
 
 /* -------- Sort -------- */
 
@@ -146,14 +155,6 @@
 }
 
 
-.notion-collection-card {
-    display: flex !important;
-    flex-direction: column  !important;
-    justify-content: flex-end !important;
-    border-radius: 0px !important;
-    box-shadow: none !important;
-}
-
 
 
 /* -------- Selected Work -------- */
@@ -166,6 +167,8 @@
     max-width: 1280px !important;
     margin: 0 auto !important;
     padding: 0px 80px !important;
+    /*   temp margin   */
+    margin-bottom: 200px !important;
 }
 
 .gallery {
