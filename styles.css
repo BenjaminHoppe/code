@@ -70,6 +70,8 @@
 }
 
 
+
+
 /* Hero small title  */
 
  .notion-collection-card board, .no-click > .notion-property__title {
@@ -77,7 +79,9 @@
     font-size: 20px !important;
     font-weight: 400 !important;
     color: white !important;
-    margin-top: !important;
+    width: 1440px !important;
+    margin: 0px auto !important;
+    text-align: left !important;
 }
 
 /* Hero text */
@@ -87,8 +91,12 @@
     color: white !important;
     font-size: 32px !important;
     line-height: 150% !important;
-    max-width: 600px !important;
+/*     max-width: 600px !important; */
+    width: 1440px !important;
+    margin: 0px auto !important;
+    text-align: left !important;
 }
+
 
 /*  Hero image */
 
@@ -151,7 +159,8 @@
 /* -------- Selected Work -------- */
 
 h2 {
-    width: 1280px !important;
+    width: 1440px !important;
+    padding: 0px 80px !important;
     margin: 80px auto !important;
     text-align: left !important;
     font-size: 40px !important;
@@ -162,8 +171,8 @@ h2 {
 
 .notion-collection-gallery {
     grid-template-columns: 1fr !important;
-    padding: 0 !important;
-    max-width: 1280px !important;
+    padding: 0px 80px !important;
+    max-width: 1440px !important;
     margin: 0 auto !important;
     grid-gap: 80px !important;
     margin-bottom: 200px !important;
