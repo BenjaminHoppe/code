@@ -1,8 +1,6 @@
-body {
-  border: 3px solid red !important;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap') !important;
 
-
-html {
-  padding: 40px !important;
+* {
+  font-family: 'DM Sans', sans-serif !important;
 }
+/* Break this up after */
