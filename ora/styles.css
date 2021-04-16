@@ -95,7 +95,7 @@ h1 {
 }
 
 /* Super wrapper*/
-.super-content.max-width {
+#page-index .super-content.max-width {
     max-width: 1280px !important;
 }
 
@@ -184,4 +184,17 @@ h1 {
     padding: 0px 32px 32px 32px !important;
     color: white !important;
     font-size: 24px !important;
+}
+
+
+/*  -------------  */
+
+/* Blog post  */
+
+.notion-header__cover {
+    max-width: 900px ! important;
+    margin: 150px auto 64px auto !important;
+    border-radius: 10px !important;
+    height: 360px !important;
+
 }
