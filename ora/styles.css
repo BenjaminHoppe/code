@@ -3,8 +3,6 @@
 * {
   font-family: 'DM Sans', sans-serif !important;
 }
-/* Break this up after */
-
 
 /* Hides certain elements */
 .notion-page__icon,
@@ -17,22 +15,32 @@
     display: none !important;
 }
 
+/* Super wrapper*/
+.super-content.max-width {
+    max-width: 1344px !important;
+    padding: 0px 48px !important;
+}
+
 /* Always show the page title */
 .notion-navbar a[href="/"] {
     display: flex !important;
 }
 
-
-
+/*—————————————————————————————————————————————*/
 /* Navbar */
+.notion-navbar a[href="/"] {
+    display: flex !important;
+}
+
 .notion-navbar {
     background: none !important;
     height: var(--navbar-height) !important;
     box-shadow: none !important;
-    position: fixed !important;
+    position: absolute  !important;
     padding-top: 64px !important;
-    padding-left: 96px !important;
+    padding-left: 48px !important;
 }
+
 .notion-navbar > a { padding: 0 !important; }
 .notion-navbar>a:hover { background: none !important; }
 .notion-breadcrumb__divider { margin: -4px 4px 0 !important; }
@@ -40,14 +48,14 @@
     overflow: visible !important;
     font-size: 20px !important;
 }
+
 .notion-quote {
     padding-top: 64px !important;
-    padding-right: 96px !important;
-    height: var(--navbar-height) !important;
+    padding-right: 48px !important;
     justify-content: flex-end !important;
     align-items: center !important;
     font-size: 16px !important;
-    position: fixed !important;
+    position: absolute  !important;
     z-index: 9999 !important;
     display: flex !important;
     border: none !important;
@@ -64,14 +72,24 @@
     margin-bottom: 0px !important;
 }
 
+/* For fixed navbar */
+
+/* .notion-navbar {
+    position: fixed !important;
+}
+
+.notion-quote {
+    position: fixed !important;
+} */
+
 /* Links only for homepage  */
 #page-index .notion-semantic-string .link {
     border: none !important;
     color: #000 !important;
     opacity: 1 !important;
-
 }
 
+/*—————————————————————————————————————————————*/
 /* Custom purchase button */
 .notion-quote > .notion-semantic-string > span:last-child {
     border: 1px solid #E6E6E6 !important;
@@ -88,40 +106,36 @@
     transition: opacity 0.2s !important;
 }
 
+/*—————————————————————————————————————————————*/
+/* Misc. */
+
 h1 {
     font-weight: 400 !important;
     max-width: 700px !important;
     font-size: 48px !important;
 }
 
-/* Super wrapper*/
-#page-index .super-content.max-width {
-    max-width: 1280px !important;
-}
-
+/*—————————————————————————————————————————————*/
 /* Blog cards container */
 
 .notion-collection-board__column-header {
-    display: none !important;
+  display: none !important;
 }
 
-
 .notion-collection-board {
-    display: flex !important;
-    border-top: 0px !important;
-    margin-top: 96px !important;
+  display: flex !important;
+  border-top: 0px !important;
+  margin-top: 96px !important;
 }
 
 #page-index .notion-collection-board__column {
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 32px !important;
-
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+  grid-gap: 32px !important;
 }
 
-
+/*—————————————————————————————————————————————*/
 /* Blog card */
-
 
 /* For wider first card on desktop */
 
@@ -129,10 +143,11 @@ h1 {
     grid-column: 1 / 3 !important;
 }
 
+/* Other cards */
+
 #page-index .notion-collection-board__column > div {
     margin-bottom: 0px !important;
     height: 400px !important;
-
 }
 
 .notion-collection-card {
@@ -150,7 +165,6 @@ h1 {
     background: transparent !important;
     transform: scale(0.94) !important;
     transition: transform 0.4s !important;
-
 }
 
 /* Card image  */
@@ -160,7 +174,6 @@ h1 {
     height: 100% !important;
     max-height: 100% !important;
     z-index: -1 !important;
-
 }
 
 .notion-collection-card__cover > * {
@@ -186,15 +199,53 @@ h1 {
     font-size: 24px !important;
 }
 
+/*—————————————————————————————————————————————*/
+/* Blog post page */
 
-/*  -------------  */
-
-/* Blog post  */
-
-.notion-header__cover {
+/* .notion-header__cover {
     max-width: 900px ! important;
     margin: 150px auto 64px auto !important;
     border-radius: 10px !important;
     height: 360px !important;
 
+} */
+
+/*—————————————————————————————————————————————*/
+/* Mobile styles  */
+
+@media screen and (max-width: 768px) {
+
+  .super-content.max-width {
+      padding: 0px 24px !important;
+  }
+
+      h1 {
+          font-size: 40px !important;
+      }
+
+      .notion-quote {
+          padding: 24px !important;
+          justify-content: flex-start !important;
+          top: 100px !important;
+          font-size: 18px !important;
+          width: 100% !important;
+      }
+
+      .notion-navbar {
+
+      padding-left: 24px !important;
+  }
+}
+
+/*—————————————————————————————————————————————*/
+/* XL Large */
+
+@media screen and (min-width: 1440px) {
+  .notion-quote {
+      padding-right: 96px !important;
+  }
+
+  .notion-navbar {
+      padding-left: 96px !important;
+  }
 }
