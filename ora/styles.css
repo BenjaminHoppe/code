@@ -1,14 +1,16 @@
 :root {
   --text-color: #000 !important;
   --background-color: #fff !important;
-  --gray-text: #5A6774 !important;
+  --gray-text-color: #5A6774 !important;
+  --divider-color: #F2F2F2 !important;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: #fff !important;
     --background-color: #000 !important;
-    --gray-text: #929da6!important;
+    --gray-text-color: #929da6!important;
+    --divider-color: #191919 !important;
   }
 }
 
@@ -19,6 +21,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li {
 body {
   background-color: var(--background-color) !important;
 }
+
 
 /*—————————————————————————————————————————————*/
 /* Misc. */
@@ -70,14 +73,14 @@ body {
 /*—————————————————————————————————————————————*/
 /* Links  */
 
-a, .link {
+.link {
   color: var(--gray-text) !important;
   text-decoration: none !important;
   border: none !important;
   transition: color 0.3s !important;
 }
 
-a, .link:hover {
+.link:hover {
   color: var(--text-color) !important;
   transition: color 0.3s !important;
 }
@@ -165,6 +168,7 @@ a, .link:hover {
 .notion-quote .notion-semantic-string .link {
   font-size: 28px !important;
   font-weight: 300 !important;
+  color: var(--gray-text-color) !important;
 }
 
 /*—————————————————————————————————————————————*/
