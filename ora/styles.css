@@ -50,14 +50,14 @@
 /* Links  */
 
 .link {
-  color: #727e8b !important;
+  color: var(--gray-text) !important;
   text-decoration: none !important;
   border: none !important;
   transition: color 0.3s !important;
 }
 
 .link:hover {
-  color: #000 !important;
+  color: var(--text-color) !important;
   transition: color 0.3s !important;
 }
 
@@ -69,7 +69,6 @@
 
 .notion-navbar {
   background: none !important;
-  height: var(--navbar-height) !important;
   box-shadow: none !important;
   position: absolute  !important;
   padding-top: 64px !important;
@@ -254,14 +253,14 @@
 }
 
 .notion-semantic-string .date {
-  color: white !important;
+  color: #fff !important;
 }
 
 /* card title  */
 
 .notion-property__title {
   padding: 0px 32px 32px 32px !important;
-  color: white !important;
+  color: #fff !important;
   font-size: 24px !important;
 }
 
@@ -282,7 +281,7 @@
 @media screen and (max-width: 600px) {
 
   #page-index .super-content {
-    margin-top: 128px !important;
+    margin-top: 160px !important;
   }
 
   .super-content.max-width {

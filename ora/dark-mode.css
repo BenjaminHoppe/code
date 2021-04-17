@@ -1,0 +1,13 @@
+: root {
+  --text-color: #fff !important;
+  --background-color: #000 !important;
+  --gray-text: #647381 !important;
+}
+
+*, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+  color: var(--text-color) !important;
+}
+
+body {
+  background-color: var(--background-color) !important;
+}
