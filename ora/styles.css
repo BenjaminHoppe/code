@@ -305,6 +305,7 @@ notion-navbar__title:hover {
     max-height: 360px !important;
 }
 
+
 /*—————————————————————————————————————————————*/
 /* Mobile styles  */
 
@@ -318,15 +319,17 @@ notion-navbar__title:hover {
     max-height: 0px !important;
   }
 
-  .notion-header__cover {
+  #page-index .notion-header__cover {
     margin: 48px auto !important;
   }
 
   .notion-header__cover, .has-cover {
     margin: 150px auto 64px auto !important;
-    max-height: 270px !important;
-    height: 270px !important;
+    max-height: 200px !important;
+    height: 200px !important;
   }
+
+
 
   .super-content.max-width, #page-index .super-content.max-width {
     padding: 0px 24px !important;
