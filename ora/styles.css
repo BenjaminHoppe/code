@@ -43,10 +43,18 @@ body {
 }
 
 /* Super wrapper*/
-.super-content.max-width {
+#page-index .super-content.max-width {
   max-width: 1344px !important;
   padding: 0px 48px !important;
 }
+
+/* Blog posts wrapper */
+.super-content.max-width {
+  max-width: 996px !important;
+  padding: 0px 48px !important;
+}
+
+
 
 /* Always show the page title */
 .notion-navbar a[href="/"] {
@@ -54,6 +62,9 @@ body {
 }
 
 /* Typography */
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 300 !important;
+}
 
 /* Width limit only on homepage */
 #page-index h1 {
