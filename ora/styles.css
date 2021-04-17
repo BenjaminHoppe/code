@@ -68,7 +68,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Width limit only on homepage */
 #page-index h1 {
-  font-weight: 400 !important;
   font-size: 48px !important;
   max-width: 700px !important;
 }
