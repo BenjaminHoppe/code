@@ -70,14 +70,14 @@ body {
 /*—————————————————————————————————————————————*/
 /* Links  */
 
-.link {
+a, .link {
   color: var(--gray-text) !important;
   text-decoration: none !important;
   border: none !important;
   transition: color 0.3s !important;
 }
 
-.link:hover {
+a, .link:hover {
   color: var(--text-color) !important;
   transition: color 0.3s !important;
 }
