@@ -1,8 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap') !important;
-
-* {
-  font-family: 'DM Sans', sans-serif !important;
+:root {
+  --text-color: #000 !important;
+  --background-color: #fff !important;
+  --gray-text: #5A6774 !important;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #fff !important;
+    --background-color: #000 !important;
+    --gray-text: #929da6!important;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+  color: var(--text-color) !important;
+}
+
+body {
+  background-color: var(--background-color) !important;
+}
+
+
 
 /*—————————————————————————————————————————————*/
 /* Misc. */
