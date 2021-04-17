@@ -1,7 +1,7 @@
 :root {
   --text-color: #000 !important;
   --background-color: #fff !important;
-  --gray-text-color: #5A6774 !important;
+  --color-text-gray: #5A6774 !important;
   --divider-color: #F2F2F2 !important;
 }
 
@@ -9,7 +9,7 @@
   :root {
     --text-color: #fff !important;
     --background-color: #000 !important;
-    --gray-text-color: #929da6!important;
+    --color-text-gray: #929da6!important;
     --divider-color: #191919 !important;
   }
 }
@@ -79,7 +79,7 @@ body {
 /* Links  */
 
 .notion-link, .link {
-  color: var(--gray-text-color) !important;
+  color: var(--color-text-gray) !important;
   text-decoration: none !important;
   border: none !important;
   transition: var(--transition) !important;
@@ -144,7 +144,7 @@ body {
 }
 
 notion-navbar__title:hover {
-  color: var(--gray-text-color) !important;
+  color: var(--color-text-gray) !important;
   transition: var(--transition) !important;
 }
 
@@ -274,13 +274,13 @@ notion-navbar__title:hover {
 /*—————————————————————————————————————————————*/
 /* Blog post page */
 
-/* .notion-header__cover {
+.notion-header__cover, .has-cover {
     max-width: 900px ! important;
     margin: 150px auto 64px auto !important;
     border-radius: 10px !important;
     height: 360px !important;
 
-} */
+}
 
 /*—————————————————————————————————————————————*/
 /* Mobile styles  */
