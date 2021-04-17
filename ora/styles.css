@@ -300,7 +300,6 @@ notion-navbar__title:hover {
 .notion-header__cover, .has-cover {
     max-width: 900px ! important;
     margin: 150px auto 64px auto !important;
-    padding: 48px !important;
     border-radius: 10px !important;
     height: 360px !important;
     max-height: 360px !important;
@@ -320,7 +319,13 @@ notion-navbar__title:hover {
   }
 
   .notion-header__cover {
-    margin: 64px auto !important;
+    margin: 48px auto !important;
+  }
+
+  .notion-header__cover, .has-cover {
+    margin: 150px auto 64px auto !important;
+    max-height: 270px !important;
+    height: 270px !important;
   }
 
   .super-content.max-width, #page-index .super-content.max-width {
