@@ -151,6 +151,7 @@ h1, h2, h3, h4, h5, h6, p {
 .notion-navbar__title {
   color: var(--text-color) !important;
   transition: var(--transition) !important;
+  font-weight: 300 !important;
 }
 
 notion-navbar__title:hover {
