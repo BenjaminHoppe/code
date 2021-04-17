@@ -316,9 +316,7 @@ notion-navbar__title:hover {
   }
 
   #page-index h1 {
-    font-weight: 400 !important;
     font-size: 32px !important;
-    max-width: 700px !important;
   }
 
   .notion-quote:first-child {
