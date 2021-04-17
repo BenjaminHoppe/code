@@ -76,17 +76,17 @@ body {
 /*—————————————————————————————————————————————*/
 /* Links  */
 
-/* .link {
-  color: var(--gray-text) !important;
+.notion-link, .link {
+  color: var(--gray-text-color) !important;
   text-decoration: none !important;
   border: none !important;
-  transition: color 0.3s !important;
+  transition: var(--transition) !important;
 }
 
-.link:hover {
+.notion-link:hover, link:hover {
   color: var(--text-color) !important;
-  transition: color 0.3s !important;
-} */
+  transition: var(--transition) !important;
+}
 
 /*—————————————————————————————————————————————*/
 /* Navbar */
