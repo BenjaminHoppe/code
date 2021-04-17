@@ -170,17 +170,17 @@
 @media screen and (max-width: 600px) {
 
     .notion-quote:first-child > .notion-semantic-string:last-child  > span:last-child {
-    border: none!important;
-    padding: 0px !important;
-    border-radius: 0px!important;
-    cursor pointer;
-    opacity: 1 !important;
-}
+        border: none!important;
+        padding: 0px !important;
+        border-radius: 0px!important;
+        cursor pointer;
+        opacity: 1 !important;
+    }
 
-.notion-quote > .notion-semantic-string > span:last-child:hover {
-    opacity: 1 !important;
+    .notion-quote > .notion-semantic-string > span:last-child:hover {
+        opacity: 1 !important;
 
-}
+    }
 
 
 }
@@ -205,7 +205,7 @@
   grid-gap: 32px !important;/* display: flex; */
 }
 
-/*—————————————————————————————————————————————*/
+/*——————————————————————*/
 /* Blog card */
 
 /* For wider first card on desktop */
@@ -288,7 +288,7 @@
 @media screen and (max-width: 600px) {
 
   #page-index .super-content {
-    margin-top: 96px !important;
+    margin-top: 256px !important;
   }
 
   .super-content.max-width {
@@ -296,25 +296,32 @@
 
   }
 
+#page-index h1 {
+    font-weight: 400 !important;
+    font-size: 32px !important;
+    max-width: 700px !important;
+}
 
-  h1 {
-    font-size: 40px !important;
-  }
 
   .notion-quote:first-child {
-    padding: 16px 24px 0px 24px !important;
+    padding: 0px 24px 0px 24px !important;
     justify-content: flex-start !important;
-    top: 100px !important;
+    top: 64px !important;
     font-size: 18px !important;
     width: 100% !important;
   }
 
   .notion-navbar {
-    padding-left: 24px !important;
+    padding: 24px !important;
   }
+
+ .notion-collection-board {
+  margin-top: 64px !important;
+}
 
   #page-index .notion-collection-board__column > div:nth-child(2) {
     grid-column: 1 / 1 !important;
+    height: 500px !important;
   }
 
   #page-index .notion-collection-board__column > div {
