@@ -298,7 +298,7 @@ notion-navbar__title:hover {
     padding: 48px !important;
     border-radius: 10px !important;
     height: 360px !important;
-
+    max-height: 360px !important;
 }
 
 /*—————————————————————————————————————————————*/
