@@ -282,7 +282,7 @@
 @media screen and (max-width: 600px) {
 
   #page-index .super-content {
-    margin-top: 256px !important;
+    margin-top: 192px !important;
   }
 
   .super-content.max-width {
@@ -294,7 +294,6 @@
     font-size: 32px !important;
     max-width: 700px !important;
   }
-
 
   .notion-quote:first-child {
     padding: 0px 24px 0px 24px !important;
