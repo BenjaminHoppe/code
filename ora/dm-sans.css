@@ -2,4 +2,7 @@
 
 * {
   font-family: 'DM Sans', sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeSpeed !important;
+  font-weight: normal !important;
 }
