@@ -314,6 +314,10 @@ notion-navbar__title:hover {
     max-height: 0px !important;
   }
 
+  .notion-header__cover {
+    margin: 64px auto !important;
+  }
+
   .super-content.max-width, #page-index .super-content.max-width {
     padding: 0px 24px !important;
   }
