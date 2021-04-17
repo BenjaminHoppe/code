@@ -42,6 +42,8 @@ body {
   display: none !important;
 }
 
+
+
 /* Super wrapper*/
 #page-index .super-content.max-width {
   max-width: 1344px !important;
@@ -78,6 +80,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 .notion-header.page {
   margin-bottom: 0px !important;
+  padding: 0px 48px !important;
+}
+
+.notion-header__cover.no-cover {
+    max-height: 0px !important;
 }
 
 /* Divider */
@@ -288,6 +295,7 @@ notion-navbar__title:hover {
 .notion-header__cover, .has-cover {
     max-width: 900px ! important;
     margin: 150px auto 64px auto !important;
+    padding: 48px !important;
     border-radius: 10px !important;
     height: 360px !important;
 
@@ -302,7 +310,8 @@ notion-navbar__title:hover {
     margin-top: 160px !important;
   }
 
-  .super-content.max-width {
+
+  .super-content.max-width, #page-index .super-content.max-width {
     padding: 0px 24px !important;
   }
 
@@ -345,6 +354,10 @@ notion-navbar__title:hover {
   .notion-collection-card {
     grid-column: 1 / 1 !important;
   }
+
+  .notion-header.page {
+      padding: 0px 24px !important;
+    }
 }
 
 /*—————————————————————————————————————————————*/
