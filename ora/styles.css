@@ -27,7 +27,9 @@ body {
 /* Misc. */
 
 /* Variables */
---transition: all 0.3s !important;
+:root {
+  --transition: all 0.3s !important;
+}
 
 /* Hides certain elements */
 .notion-page__icon,
