@@ -26,6 +26,9 @@ body {
 /*—————————————————————————————————————————————*/
 /* Misc. */
 
+/* Variables */
+--transition: all 0.3s !important;
+
 /* Hides certain elements */
 .notion-page__icon,
 .notion-toggle.bg-gray,
@@ -73,7 +76,7 @@ body {
 /*—————————————————————————————————————————————*/
 /* Links  */
 
-.link {
+/* .link {
   color: var(--gray-text) !important;
   text-decoration: none !important;
   border: none !important;
@@ -83,7 +86,7 @@ body {
 .link:hover {
   color: var(--text-color) !important;
   transition: color 0.3s !important;
-}
+} */
 
 /*—————————————————————————————————————————————*/
 /* Navbar */
@@ -133,6 +136,16 @@ body {
   display: inline !important;
 }
 
+.notion-navbar__title {
+  color: var(--text-color) !important;
+  transition: var(--transition) !important;
+}
+
+notion-navbar__title:hover {
+  color: var(--gray-text-color) !important;
+  transition: var(--transition) !important;
+}
+
 /* For fixed navbar */
 
 /* .notion-navbar {
@@ -168,7 +181,6 @@ body {
 .notion-quote .notion-semantic-string .link {
   font-size: 28px !important;
   font-weight: 300 !important;
-  color: var(--gray-text-color) !important;
 }
 
 /*—————————————————————————————————————————————*/
