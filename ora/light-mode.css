@@ -2,10 +2,10 @@
   --text-color: #000 !important;
   --background-color: #fff !important;
   --gray-text: #5A6774 !important;
+  --divider-color: #F2F2F2 !important;
 }
 
-
-*, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+h1, h2, h3, h4, h5, h6, p, ol, ul, li {
   color: var(--text-color) !important;
 }
 

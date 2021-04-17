@@ -20,8 +20,6 @@ body {
   background-color: var(--background-color) !important;
 }
 
-
-
 /*—————————————————————————————————————————————*/
 /* Misc. */
 
@@ -62,6 +60,11 @@ body {
 
 .notion-header.page {
   margin-bottom: 0px !important;
+}
+
+/* Divider */
+.notion-divider {
+    border-bottom: 1px solid var(--divider-color) !important;
 }
 
 /*—————————————————————————————————————————————*/
@@ -163,39 +166,6 @@ body {
   font-size: 28px !important;
   font-weight: 300 !important;
 }
-
-/*—————————————————————————————————————————————*/
-/* Custom purchase button */
-.notion-quote:first-child > .notion-semantic-string:last-child  > span:last-child {
-  border: 1px solid #E6E6E6 !important;
-  padding: 12px 24px !important;
-  border-radius: 50px !important;
-  cursor pointer;
-  opacity: 1 !important;
-  transition: opacity 0.2s !important;
-}
-
-.notion-quote > .notion-semantic-string > span:last-child:hover {
-  opacity: 0.5 !important;
-  cursor pointer;
-  transition: opacity 0.2s !important;
-}
-
-@media screen and (max-width: 600px) {
-
-  .notion-quote:first-child > .notion-semantic-string:last-child  > span:last-child {
-    border: none!important;
-    padding: 0px !important;
-    border-radius: 0px!important;
-    cursor pointer;
-    opacity: 1 !important;
-  }
-
-  .notion-quote > .notion-semantic-string > span:last-child:hover {
-    opacity: 1 !important;
-  }
-}
-
 
 /*—————————————————————————————————————————————*/
 /* Blog cards container */
