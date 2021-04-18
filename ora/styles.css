@@ -50,9 +50,9 @@ body {
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
 }
-#page-index h1, #page-index h2, #page-index h3, #page-index .notion-text, #page-index .notion-collection, {
+#page-index h1, h2, h3, .notion-text, .notion-collection, {
     -webkit-animation: fadeInUp 1s !important;
-    -moz-animation: fadeInUp 1s !important;
+    -moz-animati7on: fadeInUp 1s !important;
     animation: fadeInUp 1s !important;
 }
 @keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
@@ -405,5 +405,9 @@ notion-navbar__title:hover {
 
   .notion-navbar {
       padding-left: 96px !important;
+  }
+
+  .notion-quote:first-child {
+    padding-right: 96px !important;
   }
 }
