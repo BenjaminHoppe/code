@@ -50,11 +50,37 @@ body {
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
 }
-#page-index h1, h2, h3, .notion-text, .notion-collection, {
-    -webkit-animation: fadeInUp 1s !important;
-    -moz-animati7on: fadeInUp 1s !important;
-    animation: fadeInUp 1s !important;
+
+#page-index h1 {
+  -webkit-animation: fadeInUp 1s !important;
+  -moz-animati7on: fadeInUp 1s !important;
+  animation: fadeInUp 1s !important;
 }
+
+#page-index h2 {
+  -webkit-animation: fadeInUp 1s !important;
+  -moz-animati7on: fadeInUp 1s !important;
+  animation: fadeInUp 1s !important;
+}
+
+#page-index h3 {
+  -webkit-animation: fadeInUp 1s !important;
+  -moz-animati7on: fadeInUp 1s !important;
+  animation: fadeInUp 1s !important;
+}
+
+#page-index .notion-text {
+  -webkit-animation: fadeInUp 1s !important;
+  -moz-animati7on: fadeInUp 1s !important;
+  animation: fadeInUp 1s !important;
+}
+
+#page-index .notion-collection {
+  -webkit-animation: fadeInUp 1s !important;
+  -moz-animati7on: fadeInUp 1s !important;
+  animation: fadeInUp 1s !important;
+}
+
 @keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 @-moz-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 @-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
@@ -399,15 +425,11 @@ notion-navbar__title:hover {
 /* XL */
 
 @media screen and (min-width: 1440px) {
-  .notion-quote {
+  .notion-quote:first-child {
       padding-right: 96px !important;
   }
 
   .notion-navbar {
       padding-left: 96px !important;
-  }
-
-  .notion-quote:first-child {
-    padding-right: 96px !important;
   }
 }
