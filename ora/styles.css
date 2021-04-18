@@ -66,7 +66,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6, p {
-    font-weight: 300 !important;
+    font-weight: 400 !important;
 }
 
 p {
@@ -164,7 +164,7 @@ p {
 .notion-navbar__title {
   color: var(--text-color) !important;
   transition: var(--transition) !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
 }
 
 notion-navbar__title:hover {
@@ -206,7 +206,7 @@ notion-navbar__title:hover {
 
 .notion-quote .notion-semantic-string .link {
   font-size: 28px !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
 }
 
 /*—————————————————————————————————————————————*/
