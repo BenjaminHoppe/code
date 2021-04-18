@@ -50,7 +50,7 @@ body {
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
 }
-h1, h2, h3, .notion-text, .notion-collection, .super-content, .max-width {
+body, h1, h2, h3, .notion-text, .notion-collection, .super-content, .max-width {
     -webkit-animation: fadeInUp 1s !important;
     -moz-animation: fadeInUp 1s !important;
     animation: fadeInUp 1s !important;
@@ -67,8 +67,6 @@ h1, h2, h3, .notion-text, .notion-collection, .super-content, .max-width {
   max-width: 1344px !important;
   padding: 0px 48px !important;
 }
-
-/* test */
 
 /* Blog posts wrapper */
 .super-content.max-width {
