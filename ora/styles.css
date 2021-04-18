@@ -153,7 +153,7 @@ p {
 
 /* Quote block */
 .notion-quote:first-child {
-  padding-top: 64px !important;
+  padding-top: 52px !important;
   padding-right: 48px !important;
   justify-content: flex-end !important;
   align-items: center !important;
