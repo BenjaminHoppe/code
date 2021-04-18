@@ -257,7 +257,7 @@ notion-navbar__title:hover {
   display: none !important;
 }
 
-.notion-collection-board {
+#page-index .notion-collection-board {
   display: flex !important;
   border-top: 0px !important;
   margin-top: 96px !important;
@@ -347,8 +347,16 @@ notion-navbar__title:hover {
     max-height: 360px !important;
 }
 
+/* For card in blog template */
 .notion-collection-board__item {
   height: 300px !important;
+  margin-bottom: 0px !important;
+}
+
+.notion-collection-board {
+  display: flex !important;
+  border-top: 0px !important;
+  margin: 48px 0px
 }
 
 /*—————————————————————————————————————————————*/
@@ -394,9 +402,9 @@ notion-navbar__title:hover {
     padding: 24px !important;
   }
 
- .notion-collection-board {
+ /* .notion-collection-board {
    margin-top: 64px !important;
-  }
+  } */
 
   #page-index .notion-collection-board__column > div:nth-child(2) {
     grid-column: 1 / 1 !important;
