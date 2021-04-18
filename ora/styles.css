@@ -45,13 +45,11 @@ body {
 
 /* Loading animation */
 
-
-#page-index .super-content.max-width, .super-content.max-width{
-    -webkit-animation: fadeIn 1s !important;
-    -moz-animation: fadeIn 1s !important;
-    animation: fadeIn 1s !important;
+body {
+  -webkit-animation: fadeIn 1s !important;
+  -moz-animation: fadeIn 1s !important;
+  animation: fadeIn 1s !important;
 }
-
 
 
 /* Super wrapper*/
