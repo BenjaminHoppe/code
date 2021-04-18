@@ -50,10 +50,7 @@ body {
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
 }
-h1, h2, h3,
-.notion-column-list,
-.notion-collection,
-.notion-divider {
+h1, h2, h3, .notion-text, .notion-collection, .notion-header, .page {
     -webkit-animation: fadeInUp 1s !important;
     -moz-animation: fadeInUp 1s !important;
     animation: fadeInUp 1s !important;
@@ -61,9 +58,9 @@ h1, h2, h3,
 @keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 @-moz-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 @-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
-@keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
-@-moz-keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
-@-webkit-keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
+@keyframes fadeInUp { 0% { transform: translate3d(0,80px,0); } 100% { transform: translate3d(0,0,0); } }
+@-moz-keyframes fadeInUp { 0% { transform: translate3d(0,80px,0); } 100% { transform: translate3d(0,0,0); } }
+@-webkit-keyframes fadeInUp { 0% { transform: translate3d(0,80px,0); } 100% { transform: translate3d(0,0,0); } }
 
 /* Super wrapper*/
 #page-index .super-content.max-width {
