@@ -9,8 +9,8 @@
 
 .notion-quote:first-child > .notion-semantic-string:last-child  > span:last-child > .notion-link:hover {
     transition: var(--transition) !important;
-    border: 1px solid #f9f9f9 !important;
-    background-color:  #f9f9f9 !important;
+    border: 1px solid var(--divider-color) !important;
+    background-color: var(--divider-color) !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -24,7 +24,7 @@
     background-color: none !important;
 
   }
-  
+
     .notion-quote:first-child > .notion-semantic-string:last-child > span:last-child > .notion-link:hover {
         background-color: transparent !important;
         border: none !important;
