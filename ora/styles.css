@@ -50,7 +50,7 @@ body {
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
 }
-body, h1, h2, h3, .notion-text, .notion-collection, .super-content, .max-width {
+#page-index h1, h2, h3, .notion-text, .notion-collection, {
     -webkit-animation: fadeInUp 1s !important;
     -moz-animation: fadeInUp 1s !important;
     animation: fadeInUp 1s !important;
