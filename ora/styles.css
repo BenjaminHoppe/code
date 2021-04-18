@@ -43,6 +43,15 @@ body {
   display: none !important;
 }
 
+/* Loading animation */
+
+
+#page-index .super-content.max-width, .super-content.max-width{
+    -webkit-animation: fadeIn 1s !important;
+    -moz-animation: fadeIn 1s !important;
+    animation: fadeIn 1s !important;
+}
+
 
 
 /* Super wrapper*/
@@ -380,7 +389,7 @@ notion-navbar__title:hover {
 }
 
 /*—————————————————————————————————————————————*/
-/* XL Large */
+/* XL */
 
 @media screen and (min-width: 1440px) {
   .notion-quote {

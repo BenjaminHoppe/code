@@ -13,6 +13,7 @@
     background-color: var(--divider-color) !important;
 }
 
+/* Mobile  */
 @media screen and (max-width: 600px) {
 
   .notion-quote:first-child > .notion-semantic-string:last-child  > span:last-child > .notion-link {
