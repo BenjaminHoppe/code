@@ -323,6 +323,9 @@ notion-navbar__title:hover {
     max-height: 360px !important;
 }
 
+.notion-collection-board__item {
+  height: 300px !important;
+}
 
 /*—————————————————————————————————————————————*/
 /* Mobile styles  */
