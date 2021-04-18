@@ -17,6 +17,7 @@
 @media screen and (max-width: 600px) {
 
   .notion-quote:first-child > .notion-semantic-string:last-child  > span:last-child > .notion-link {
+    color: var(--color-text-gray) !important;
     border: none !important;
     padding: 0px !important;
     border-radius: 0px!important;
@@ -27,6 +28,7 @@
   }
 
     .notion-quote:first-child > .notion-semantic-string:last-child > span:last-child > .notion-link:hover {
+        color: var(--text-color) !important;
         background-color: transparent !important;
         border: none !important;
     }
