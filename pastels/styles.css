@@ -21,3 +21,85 @@
   max-width: 1024px !important;
   padding: 0px 48px !important;
 }
+
+
+
+/*—————————————————————————————————————————————*/
+/* Navbar */
+.notion-navbar a[href="/"] {
+  display: flex !important;
+}
+
+.notion-navbar {
+  background: none !important;
+  box-shadow: none !important;
+  position: absolute  !important;
+  padding-top: 32px !important;
+  padding-left: 32px !important;
+}
+
+.notion-navbar > a { padding: 0 !important; }
+.notion-navbar>a:hover { background: none !important; }
+.notion-breadcrumb__divider { margin: -4px 4px 0 !important; }
+.notion-navbar__title {
+  overflow: visible !important;
+  font-size: 20px !important;
+}
+
+/* Quote block */
+.notion-quote:first-child {
+  padding-top: 32px !important;
+  padding-right: 32px !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  font-size: 16px !important;
+  position: absolute  !important;
+  z-index: 9999 !important;
+  display: flex !important;
+  border: none !important;
+  margin: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+}
+
+
+.notion-quote:first-child .notion-semantic-string .link {
+  font-size: 16px !important;
+}
+
+.notion-quote:first-child span,
+.notion-quote:first-child .link {
+  display: inline !important;
+}
+
+.notion-navbar__title {
+  color: var(--text-color) !important;
+  transition: var(--transition) !important;
+  font-weight: 400 !important;
+}
+
+notion-navbar__title:hover {
+  color: var(--color-text-gray) !important;
+  transition: var(--transition) !important;
+}
+
+/* For fixed navbar */
+
+/* .notion-navbar {
+  position: fixed !important;
+}
+
+.notion-quote:first-child {
+  position: fixed !important;
+}
+ */
+/*—————————————————————————————————————————————*/
+/* Typography */
+
+h1 {
+    font-size: 64px !important;
+}
+
+h3 {
+    font
+}
