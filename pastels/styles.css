@@ -1,3 +1,23 @@
-* {
-  font-family: 'Marcellus', serif !important;
+/*—————————————————————————————————————————————*/
+
+/* Variables */
+:root {
+  --transition: all 0.3s !important;
+}
+
+/* Hides certain elements */
+.notion-page__icon,
+.notion-toggle.bg-gray,
+.notion-header__content,
+.notion-property__title__icon-wrapper,
+.notion-breadcrumb__divider,
+.notion-collection__header,
+.notion-breadcrumb__item {
+  display: none !important;
+}
+
+/* Super wrapper*/
+#page-index .super-content.max-width {
+  max-width: 1024px !important;
+  padding: 0px 48px !important;
 }
