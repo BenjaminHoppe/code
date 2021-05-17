@@ -11,14 +11,14 @@
 .notion-header__content,
 .notion-property__title__icon-wrapper,
 .notion-breadcrumb__divider,
-.notion-collection__header,
 .notion-breadcrumb__item {
   display: none !important;
 }
 
 /* Super wrapper*/
-#page-index .super-content.max-width {
-  max-width: 1024px !important;
+.super-content {
+  max-width: 1170px !important;
+  margin: 0px auto !important;
   padding: 0px 48px !important;
 }
 
@@ -98,8 +98,71 @@ notion-navbar__title:hover {
 
 h1 {
     font-size: 64px !important;
+    margin-top: 16px !important;
 }
 
 h3 {
     font
+}
+
+
+/*—————————————————————————————————————————————*/
+/* Projects */
+
+.notion-collection__header {
+    padding: 0px !important;
+    margin: 0px 0px 48px 0px !important;
+    font-size: 48px !important;
+}
+
+
+.notion-collection-gallery {
+    border-top: none !important;
+    grid-template-columns: 1fr !important;
+}
+
+/* Image */
+.notion-collection-card__cover, .notion-collection-card__cover.large > div {
+    height: 600px !important;
+    max-height: 600px !important;
+    border-bottom: none !important;
+}
+
+.notion-collection-card__cover img {
+    border-radius: 0px !important;
+}
+
+
+
+.notion-collection-card {
+    box-shadow: none !important;
+    border-radius: 0px !important; 
+    transition: none !important;
+    background: transparent !important;
+    margin-bottom: 80px !important;
+}
+
+
+/* Project card content */
+.notion-collection-card__content, .no-title {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    padding: 0px !important;
+    color: var(--text-color) !important;
+    margin-top: 16px !important;
+}
+
+
+.notion-collection-card__content > div:first-child {
+    font-size: 40px !important;
+    padding: 16px 0px
+}
+
+.notion-collection-card__content > div:nth-child(2) {
+    font-size: 14px !important;
+    justify-self: end !important;
+}
+
+.notion-collection-card__content > div:nth-child(3) {
+ font-size: 16px !important;
 }
