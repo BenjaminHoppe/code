@@ -157,6 +157,15 @@ p {
 }
 
 /*—————————————————————————————————————————————*/
+/* About page */
+
+/* max height for first image only */
+#page-about img:first-child {
+    max-height: 450px !important;
+    object-fit: cover !important;
+}
+
+/*—————————————————————————————————————————————*/
 /* Blog post page */
 
 .notion-header__cover, .has-cover {
@@ -209,7 +218,7 @@ p {
   #page-index h1 {
     font-size: 32px !important;
   }
-  
+
   .notion-header.page {
       padding: 0px 24px !important;
     }
