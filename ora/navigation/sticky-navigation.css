@@ -68,7 +68,7 @@ notion-navbar__title:hover {
   .notion-quote:first-child {
     padding: 0px 24px 24px 24px !important;
     justify-content: flex-start !important;
-    top: 80px !important;
+    top: 48px !important;
     font-size: 18px !important;
     width: 100% !important;
     background-color: var(--background-color) !important;
