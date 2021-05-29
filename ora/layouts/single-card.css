@@ -13,7 +13,7 @@
 
 #page-index .notion-collection-board__column {
   display: grid !important;
-  grid-template-columns: repeat(1, minmax(258px, 1fr));
+  grid-template-columns: repeat(1, minmax(258px, 1fr)) !important;
   grid-gap: 48px !important;
 }
 
@@ -24,6 +24,8 @@
   margin-bottom: 0px !important;
   height: 620px !important;
 }
+
+
 
 .notion-collection-card {
   display: flex !important;
