@@ -155,7 +155,6 @@ p {
   font-size: 28px !important;
   font-weight: 400 !important;
 }
-
 /*—————————————————————————————————————————————*/
 /* About page */
 
@@ -164,7 +163,7 @@ p {
     max-height: 450px !important;
 }
 
-#page-about img:first-child[style] {
+#page-about img[style] {
     object-fit: cover !important;
 }
 
