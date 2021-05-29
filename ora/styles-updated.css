@@ -163,6 +163,7 @@ p {
 #page-about img:first-child {
     max-height: 450px !important;
     object-fit: cover !important;
+    /* test */
 }
 
 /*—————————————————————————————————————————————*/
