@@ -171,7 +171,7 @@ p {
 /* Blog post page */
 
 .notion-header__cover, .has-cover {
-    max-width: 800px ! important;
+    max-width: 900px !important;
     margin: 150px auto 64px auto !important;
     border-radius: 10px !important;
     height: 360px !important;
