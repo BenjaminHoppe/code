@@ -34,6 +34,7 @@
   border-radius: 10px !important;
   transition: transform 0.4s !important;
   transform: scale(1) !important;
+  background: transparent !important;
 }
 
 .notion-collection-card:hover {
