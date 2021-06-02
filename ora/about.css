@@ -1,0 +1,11 @@
+/*—————————————————————————————————————————————*/
+/* About page */
+
+/* max height for first image only */
+#page-about img:first-child {
+    max-height: 450px !important;
+}
+
+#page-about img[style] {
+    object-fit: cover !important;
+}

@@ -1,0 +1,122 @@
+/* A backup of the Ora landing page styles */
+
+
+/* Custom button */
+
+#page-landing .bg-gray {
+  border: 1px solid var(--divider-color) !important;
+  padding: 12px 24px !important;
+  border-radius: 50px !important;
+  background-color: var(--divider-color);
+  transition: var(--transition) !important;
+  color: var(--link-color) !important;
+}
+
+#page-landing .bg-gray:hover {
+  background-color: transparent !important;
+  transition: var(--transition) !important;
+}
+
+/* Code block */
+code {
+  color: var(--color-text-gray) !important;
+  text-shadow: none !important;
+}
+
+.notion-code > pre {
+  background-color: var(--divider-color) !important;
+}
+
+code > * {
+  color: var(--color-text-gray) !important;
+  text-shadow: none !important;
+}
+
+/* Typography */
+
+#page-landing h1 {
+  font-size: 40px !important;
+  margin-bottom: 16px !important;
+}
+
+#page-landing h2 {
+  font-size: 32px !important;
+  margin-bottom: 16px !important;
+}
+
+/* Centers columns */
+#block-1f7c04be869f4784a42e481b4be4a213 {
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+}
+
+/* Custom nav button */
+
+#page-landing .notion-quote:first-child > .notion-semantic-string:last-child  > span:last-child > .notion-link {
+  border: 1px solid var(--divider-color) !important;
+  padding: 12px 24px !important;
+  border-radius: 50px !important;
+  cursor pointer;
+  transition: var(--transition) !important;
+  background-color: var(--divider-color) !important;
+}
+
+#page-landing .notion-quote:first-child > .notion-semantic-string:last-child  > span:last-child > .notion-link:hover {
+  transition: var(--transition) !important;
+  border: 1px solid var(--divider-color) !important;
+  background-color: transparent !important;
+}
+
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+
+  /* Aligns columns */
+  #block-1f7c04be869f4784a42e481b4be4a213 {
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+  }
+
+  /* Typography */
+
+  #page-landing h1 {
+    font-size: 32px !important;
+  }
+
+  #page-landing h2 {
+    font-size: 24px !important;
+  }
+
+  /* Reduces distance from top of paghe */
+  #page-landing .notion-header__cover, .has-cover {
+    margin: 16px auto 64px auto !important;
+  }
+
+  /* Navbar styles*/
+  #page-landing .notion-navbar {
+    height: 75px !important;
+  }
+
+  #page-landing .notion-quote:first-child {
+    padding: 24px !important;
+    top: 0px !important;
+    width: auto !important;
+  }
+
+  /* Button styles*/
+  #page-landing .notion-quote:first-child > .notion-semantic-string:last-child  > span:last-child > .notion-link {
+    border: 1px solid var(--divider-color) !important;
+    padding: 12px 24px !important;
+    border-radius: 50px !important;
+    cursor pointer;
+    transition: var(--transition) !important;
+    background-color: var(--divider-color) !important;
+  }
+
+  #page-landing .notion-quote:first-child > .notion-semantic-string:last-child  > span:last-child > .notion-link:hover {
+      transition: var(--transition) !important;
+      border: 1px solid var(--divider-color) !important;
+      background-color: transparent !important;
+  }
+
+}
