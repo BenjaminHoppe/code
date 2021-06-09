@@ -11,7 +11,7 @@
 .notion-header__content,
 .notion-property__title__icon-wrapper,
 .notion-breadcrumb__divider,
-.notion-breadcrumb__item {
+.notion-breadcrumb__item, .notion-collection-board__column-header {
   display: none !important;
 }
 
@@ -165,4 +165,31 @@ h3 {
 
 .notion-collection-card__content > div:nth-child(3) {
  font-size: 16px !important;
+}
+
+
+
+
+/*—————————————————————————————————————————————*/
+/* Projects */
+
+.notion-collection-board {
+    grid-template-columns: 1fr !important;
+    border-top: 0px !important;
+}
+
+.notion-collection-board__column {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    width: 100% !important;
+    grid-gap: 64px !important;
+}
+
+
+.notion-collection-board__item {/* display: flex; */
+    margin-bottom: 0px !important;
+}
+
+.notion-collection-board__item > .notion-collection-card {
+    margin-bottom: 0px !important;
 }
