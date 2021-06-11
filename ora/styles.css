@@ -19,6 +19,11 @@
   display: none !important;
 }
 
+/* Fixed board issue */
+.notion-collection-board .large {
+  overflow: hidden !important;
+}
+
 /* Loading animation */
 
 body {
