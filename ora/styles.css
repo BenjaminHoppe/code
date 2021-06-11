@@ -24,6 +24,9 @@
   overflow: hidden !important;
 }
 
+.notion-collection-board {
+  overflow: hidden !important;
+}
 /* Loading animation */
 
 body {
