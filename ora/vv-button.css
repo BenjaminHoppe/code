@@ -6,12 +6,14 @@
   cursor pointer;
   transition: var(--transition) !important;
   background-color: var(--divider-color) !important;
+  color: var(--text-color) !important;
 }
 
 .notion-quote:first-child > .notion-semantic-string:last-child  > span:last-child > .notion-link:hover {
   transition: var(--transition) !important;
   border: 1px solid var(--divider-color) !important;
   background-color: transparent !important;
+  color: var(--color-text-gray) !important;
 }
 
 /* Mobile  */
