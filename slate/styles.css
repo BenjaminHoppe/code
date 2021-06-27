@@ -4,7 +4,7 @@
 @font-face {
     font-family: 'Plus Jakarta Sans';
     src:
-        url('http://code.benjaminhoppe.co/slate/assets/PlusJakartaSans-Regular.woff') format('woff'),
+        url('https://code.benjaminhoppe.co/slate/assets/PlusJakartaSans-Regular.woff') format('woff'),
         url('https://code.benjaminhoppe.co/slate/assets/PlusJakartaSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -95,6 +95,13 @@
     font-size: 32px !important;
     font-weight: 400 !important;
     margin: 0px !important;
-    padding: 0px 0px 80px 80px !important;
+    padding: 0px 40px 80px 80px !important;
+    overflow: unset;
+    max-width: 640px;
+}
 
+
+.large > .notion-collection-card > .notion-collection-card__content > div > div > span {
+  max-width: 640px;
+  white-space: unset;
 }
