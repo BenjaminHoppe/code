@@ -162,7 +162,7 @@ p {
 
 /* Quote block */
 .notion-quote:first-child {
-  padding-top: 52px !important;
+  padding-top: 54px !important;
   padding-right: 48px !important;
   justify-content: flex-end !important;
   align-items: center !important;

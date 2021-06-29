@@ -22,7 +22,7 @@
 
 /* Quote block */
 .notion-quote:first-child {
-  padding-top: 52px !important;
+  padding-top: 54px !important;
   padding-right: 48px !important;
   justify-content: flex-end !important;
   align-items: center !important;
@@ -57,6 +57,15 @@ notion-navbar__title:hover {
   transition: var(--transition) !important;
 }
 
+/*——————————————————————*/
+/* Tablet styles */
+@media screen and (max-width: 875px) {
+  .notion-navbar > a > div {
+    max-width: 350px !important;
+    white-space: unset !important;
+  }
+}
+
 
 /*——————————————————————*/
 /* Mobile styles  */
@@ -71,7 +80,7 @@ notion-navbar__title:hover {
   }
 
   .notion-navbar {
-    padding: 24px !important;
+    padding: 32px 24px !important;
   }
 
   .notion-header.page {
