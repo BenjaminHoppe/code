@@ -23,11 +23,17 @@
 .notion-navbar,
 .notion-toggle,
 .notion-header,
-.notion-collection__header,
 .notion-property__title__icon-wrapper,
 .notion-header__cover.no-cover {
     display: none !important;
 }
+
+
+/* Hides header on hero section but not selected work */
+#page-index .notion-collection:first-of-type > div > h3 {
+    display: none !important;
+}
+
 
 /*  Super */
 .super-content {
@@ -39,7 +45,7 @@
 .notion-collection-gallery {
     padding: 0px !important;
     border-top: 0px !important;
-    margin: 0px !important;
+    margin: 0px auto !important;
 }
 
 
