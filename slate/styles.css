@@ -54,8 +54,16 @@
   background: transparent !important;
 }
 
+/* removes border radius */
+
+.notion-collection-card__cover img {
+    border-radius: 0px !important;
+}
+
 .notion-link {
     border-bottom: 0px !important;
+    transition: 0.2s all !important;
+    opacity: 1 !important;
 }
 
 
@@ -76,7 +84,6 @@
 
 /* Hides gallery anchor link */
 .large > .notion-collection-card > .notion-collection-card__anchor {
-    border: 20px solid green !important;
     z-index: -10 !important;
 }
 
@@ -86,7 +93,7 @@
 .large > .notion-collection-card > .notion-collection-card__cover  {
     height: 100vh !important;
     max-height: 100vh !important;
-    border-bottom: 0px !important;
+    border-bottom: 0px !important;/* border-radius: 2222px; */
 }
 
 /* hero image */
@@ -211,6 +218,9 @@
 
 /*—————————————————————————————————————————————*/
 /* Navbar */
+
+
+/* Title styles */
 .notion-navbar a[href="/"] {
   display: flex !important;
 }
@@ -234,7 +244,18 @@
   line-height: 22px !importnt;
 }
 
-/*  */
+.notion-navbar > .notion-link {
+  color: white !important;
+  font-weight: 400 !important;
+}
+
+.notion-navbar > .notion-link:hover {
+  transition: 0.2s all !important;
+  color: #ccc !important;
+}
+
+
+/* ————— */
 /* Quote block (nav items) */
 .notion-quote:first-of-type {
   padding-top: 52px !important;
@@ -257,8 +278,13 @@
   font-size: 16px !important;
   color: #fff !important;
   opacity: 1 !important;
+  margin-right: 24px !important;
 }
 
+/* Hides empty span's in the nav bar (spaces) */
+.notion-quote:first-of-type .notion-semantic-string:nth-of-type(even) {
+    display: none !important;
+}
 
 /* Custom button */
 .notion-quote:first-of-type > .notion-semantic-string:last-child  > span:last-child > .notion-link {
@@ -268,6 +294,7 @@
   cursor pointer !impotant;
   color: white !important;
   opacity: 1 !important;
+  margin-right: 0px !important;
 
 }
 
@@ -276,19 +303,6 @@
    opacity: 0.7 !important;
 }
 
-
-
-
-
-
-.notion-navbar__title {
-  color: white !important;
-  font-weight: 400 !important;
-}
-
-notion-navbar__title:hover {
-  transition: 0.2s all !important;
-}
 
 
 
