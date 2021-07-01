@@ -160,11 +160,15 @@
     width: 66% !important;
     height: 100% !important;
     max-height: 100% !important;
+    overflow: hidden;
 }
 
 /* Image wrapper */
 .medium > .notion-collection-card > .notion-collection-card__cover > div > img {
   border-radius: 0px !important;
+    overflow: hidden !important;
+    transition: all .2s ease-in-out !important;
+
 }
 
 /* Project details content */
@@ -187,8 +191,16 @@
 }
 
 
+/* Image over effect */
+.medium > .notion-collection-card:hover .notion-collection-card__cover > div > img {
+    transform: scale(1.15);
+    transition: all .2s ease-in-out !important;
+}
 
-
+/* Text over effect */
+.medium > .notion-collection-card:hover .notion-collection-card__content > div:last-of-type {
+    opacity: 0.5 !important;
+}
 
 
 
