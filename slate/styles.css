@@ -1,4 +1,4 @@
-/* -------- Global styles -------- */
+/* ---------------- Global styles ---------------- */
 
 /* Font */
 @font-face {
@@ -14,9 +14,6 @@
 * {
   font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
-
-
-
 
 /* Hiding notion defaults */
 
@@ -41,13 +38,25 @@
     padding-right: 0px !important;
 }
 
-/* Gallery styles */
+/* Global gallery styles */
 .notion-collection-gallery {
     padding: 0px !important;
     border-top: 0px !important;
     margin: 0px auto !important;
 }
 
+/* Global collection styles */
+.notion-collection-card {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+.notion-collection-card:hover {
+  background: transparent !important;
+}
+
+
+/* ---------------- Hero styles ---------------- */
 
 /* hero gallery */
  .large > .notion-collection-card {
@@ -111,3 +120,76 @@
   max-width: 640px;
   white-space: unset;
 }
+
+/* ---------------- Selected work styles ---------------- */
+
+/* Section title */
+.notion-collection__header {
+    max-width: 1280px !important;
+    margin: 80px auto !important;
+    font-size: 32px !important;
+    line-height: 40px !important;
+    font-weight: 400 !important;
+}
+
+/* Collection board */
+.medium {
+    max-width: 1280px !important;
+    margin: 0px auto !important;
+    grid-template-columns: 1fr !important;
+    grid-gap: 80px !important;
+}
+
+/* Main project container */
+.medium > .notion-collection-card {
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    display: flex !important;
+}
+
+/* Image parent div */
+.medium > .notion-collection-card > .notion-collection-card__cover {
+    max-height: 500px !important;
+    height: 500px !important;
+}
+
+/* Image wrapper */
+.medium > .notion-collection-card > .notion-collection-card__cover > div {
+    width: 66% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+/* Image wrapper */
+.medium > .notion-collection-card > .notion-collection-card__cover > div > img {
+  border-radius: 0px !important;
+}
+
+/* Project details content */
+.medium > .notion-collection-card > .notion-collection-card__content {
+    width: 33% !important;
+    padding: 0px 0px 0px 80px !important;
+    font-size: 16px !important;
+}
+
+/* Project title* */
+.medium > .notion-collection-card > .notion-collection-card__content > div:first-of-type {
+    font-size: 32px !important;
+    margin-bottom: 16px !important;
+}
+
+/* Project sub item */
+.medium > .notion-collection-card > .notion-collection-card__content > div:nth-of-type(2) {
+    font-size: 14px !important;
+    margin-bottom: 24px !important;
+}
+
+
+
+
+
+
+
+/*  */
