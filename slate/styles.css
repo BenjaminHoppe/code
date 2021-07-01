@@ -17,7 +17,6 @@
 
 /* Hiding notion defaults */
 
-.notion-navbar,
 .notion-toggle,
 .notion-header,
 .notion-property__title__icon-wrapper,
@@ -54,6 +53,12 @@
 .notion-collection-card:hover {
   background: transparent !important;
 }
+
+.notion-link {
+    border-bottom: 0px !important;
+}
+
+
 
 
 /* ---------------- Hero styles ---------------- */
@@ -201,6 +206,110 @@
 .medium > .notion-collection-card:hover .notion-collection-card__content > div:last-of-type {
     opacity: 0.5 !important;
 }
+/*  */
+
+
+/*—————————————————————————————————————————————*/
+/* Navbar */
+.notion-navbar a[href="/"] {
+  display: flex !important;
+}
+
+.notion-navbar {
+  background: none !important;
+  box-shadow: none !important;
+  position: absolute  !important;
+  padding-top: 49px !important;
+  padding-left: 80px !important;
+  background-color: var(--background-color) !important;
+  color: #fff !important;
+}
+
+.notion-navbar > a { padding: 0 !important; }
+.notion-navbar>a:hover { background: none !important; }
+/* .notion-breadcrumb__divider { margin: -4px 4px 0 !important; } */
+.notion-navbar__title {
+  overflow: visible !important;
+  font-size: 20px !important;
+  line-height: 22px !importnt;
+}
+
+/*  */
+/* Quote block (nav items) */
+.notion-quote:first-of-type {
+  padding-top: 52px !important;
+  padding-right: 80px !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  font-size: 16px !important;
+  position: absolute  !important;
+  z-index: 9999 !important;
+  display: flex !important;
+  border: none !important;
+  margin: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+
+}
+
+/* nav items text size */
+.notion-quote:first-of-type .notion-semantic-string .link {
+  font-size: 16px !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+
+/* Custom button */
+.notion-quote:first-of-type > .notion-semantic-string:last-child  > span:last-child > .notion-link {
+  border: 1px solid white!important;
+  padding: 8px 24px !important;
+  border-radius: 1000px !important;
+  cursor pointer !impotant;
+  color: white !important;
+  opacity: 1 !important;
+
+}
+
+/* button hover */
+.notion-quote:first-of-type > .notion-semantic-string:last-child  > span:last-child > .notion-link:hover {
+   opacity: 0.7 !important;
+}
+
+
+
+
+
+
+.notion-navbar__title {
+  color: white !important;
+  font-weight: 400 !important;
+}
+
+notion-navbar__title:hover {
+  transition: 0.2s all !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
