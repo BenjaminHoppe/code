@@ -1,0 +1,23 @@
+@import "fonts/futura-pt.css" !important;
+
+* {
+  font-family: 'Futura PT', sans-serif !important;
+}
+
+body {
+  background-color: #f9f8f7 !important;
+}
+
+h1, h2, h3, {
+  color:#54575a !important;
+}
+
+p, ol, ul {
+  color: #6e7272 !important;
+  line-height: 2 !important;
+}
+
+.notion-link {
+  color: #54575a !important;
+  opacity: 1;
+}
