@@ -1,6 +1,12 @@
 /* A backup of the Ora landing page styles */
 
 
+#page-landing {
+  .super-navbar {
+    display: none !important;
+  }
+}
+
 /* Custom button */
 
 #page-landing .bg-gray {
