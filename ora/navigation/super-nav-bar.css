@@ -1,24 +1,18 @@
-
+/* Desktop */
 .super-navbar {
   background: var(--background-color) !important;
   height: 128px !important;
 }
 
-
-.super-navbar__cta {
-  padding: 12px 24px !important;
-}
-
-
 .super-navbar__cta  {
   background: var(--divider-color) !important;
   color: var(--color-text-gray) !important;
+  padding: 12px 24px !important;
 }
 
 .super-navbar__content {
-  padding: 8px 96px !important;
+  padding: 8px 32px !important;
 }
-
 
 .super-navbar__content > .notion-link {
   color: var(--text-color) !important;
@@ -29,13 +23,12 @@
   color: var(--color-text-gray) !important;
 }
 
-
-@media screen and (max-width: 1439px) {
-  .super-navbar__content {
-    padding: 8px 32px !important;
-  }
+.super-navbar__menu {
+  top: 24px !important;
+  right: 28px !important;
 }
 
+/* Mobile  */
 
 @media screen and (max-width: 600px) {
   .super-navbar__content {
@@ -45,11 +38,19 @@
   .super-navbar {
     height: 96px !important;
   }
+
+  .super-navbar__menu {
+    top: 8px !important;
+    right: 12px !important;
+  }
 }
 
+@media screen and (max-width: 546px) {
+   .super-navbar__menu {
+     right: 4px !important;
+   }
+}
 
-
-/* Mobile menu color*/
 .super-navbar__menu[style] {
   background: var(--divider-color) !important;
 }
@@ -57,4 +58,19 @@
 .super_navbar__menu {
   box-shadow: 0px !important;
   -webkit-box-shadow: 0px !important;
+}
+
+/* XL */
+
+@media screen and (min-width: 1441px) {
+  .super-navbar__content {
+    padding: 8px 96px !important;
+
+  }
+
+    .super-navbar__menu {
+        right: 92px !important;
+    }
+
+
 }
