@@ -124,6 +124,21 @@ p {
 }
 
 /*—————————————————————————————————————————————*/
+/* Code block */
+code {
+  color: var(--color-text-gray) !important;
+  text-shadow: none !important;
+}
+
+.notion-code > pre {
+  background-color: var(--divider-color) !important;
+}
+
+.token {
+  background-color: transparent !important;
+}
+
+/*—————————————————————————————————————————————*/
 /* Links  */
 
 .notion-link, .link {
