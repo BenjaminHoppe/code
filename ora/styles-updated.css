@@ -181,6 +181,13 @@ code {
 }
 
 /*—————————————————————————————————————————————*/
+/* Tweet */
+.static-tweet-p {
+    color: #1c2022 !important;
+}
+
+
+/*—————————————————————————————————————————————*/
 /* About page */
 
 /* max height for first image only */
