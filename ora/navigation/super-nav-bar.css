@@ -17,6 +17,7 @@
 .super-navbar__content > .notion-link {
   color: var(--text-color) !important;
   font-size: 20px !important;
+  max-height: 32px !important;
 }
 
 .super-navbar__content > .notion-link:hover {
