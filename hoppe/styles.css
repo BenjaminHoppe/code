@@ -1,0 +1,53 @@
+.notion-header__content,
+.notion-navbar {
+  display: none !important;
+}
+
+.notion-header__cover.no-cover {
+    display: none !important;
+}
+
+.super-content {
+    padding: 128px 40px !important;
+}
+
+body {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+}
+
+h3 {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+}
+
+a {
+    color: #fff !important;
+    opacity: 100% !important;
+    border: 0px !important;
+    transition: color 0.2s !important;
+}
+
+a:hover {
+    color: #b2b9c3 !important;
+    transition: color 0.2s !important;
+}
+
+.bg-gray {
+    background: none !important;
+    letter-spacing: 1px !important;
+    font-weight: 500 !important;
+}
+
+.color-gray {
+    color: #6a6f75 !important;
+}
+
+@media screen and (max-width: 600px) {
+    .super-content {
+        padding: 40px !important;
+    }
+}
