@@ -1,0 +1,84 @@
+/* Color */
+:root {
+    --text-color: #000 !important;
+    --background-color: #fff !important;
+    --color-text-gray: #5A6774 !important;
+    --divider-color: #F2F2F2 !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+    color: var(--text-color) !important;
+  }
+  
+  body {
+    background-color: var(--background-color) !important;
+  }
+  
+
+
+/* Blog posts wrapper */
+.super-content.max-width {
+    max-width: 996px !important;
+    padding: 0px 48px !important;
+  }
+
+  /* Typography */
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 400 !important;
+}
+
+p {
+  font-size: 18px !important;
+  line-height: 200% !important;
+}
+
+/* Divider */
+.notion-divider {
+    border-bottom: 1px solid var(--divider-color) !important;
+}
+
+/* Links  */
+
+.notion-link, .link {
+    color: var(--color-text-gray) !important;
+    text-decoration: none !important;
+    border: none !important;
+    transition: var(--transition) !important;
+  }
+  
+  .notion-link:hover, link:hover {
+    color: var(--text-color) !important;
+    transition: var(--transition) !important;
+  }
+
+/* Blog post page */
+
+.notion-header__cover, .has-cover {
+    max-width: 900px !important;
+    margin: 150px auto 64px auto !important;
+    border-radius: 10px !important;
+    height: 360px !important;
+    max-height: 360px !important;
+}
+
+/* For card in blog template */
+.notion-collection-board__item {
+  height: 300px !important;
+  margin-bottom: 0px !important;
+}
+
+.notion-collection-board {
+  display: flex !important;
+  border-top: 0px !important;
+  margin: 48px 0px
+}
+
+/* Mobile styles  */
+
+@media screen and (max-width: 600px) {
+    .super-content.max-width, #page-index .super-content.max-width {
+      padding: 0px 24px !important;
+    }
+  
+  }
+  
