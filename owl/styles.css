@@ -1,7 +1,14 @@
-.super-navbar__content,
+.super-navbar,
 .notion-header__title,
-.notion-collection__header {
+.notion-collection__header,
+.notion-header {
   display: none;
+}
+.super-content {
+  padding-left: calc(env(safe-area-inset-left) + 40px);
+  padding-right: calc(env(safe-area-inset-right) + 40px);
+  padding-bottom: 10vh;
+  padding-top: 40px;
 }
 .notion-collection-gallery {
   border-top: 0;
@@ -35,5 +42,10 @@ h2.notion-heading {
 }
 .notion-column a[target="_blank"]:after {
   content: url(images/arrow.svg);
+  width: 16px;
+  height: auto;
   margin-left: 0.1rem;
+}
+.notion-column > .notion-heading:first-of-type {
+  margin-top: 0;
 }
