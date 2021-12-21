@@ -34,6 +34,6 @@ h2.notion-heading {
   opacity: 0.5;
 }
 .notion-column a[target="_blank"]:after {
-  content: "\2197";
+  content: url(images/arrow.svg);
   margin-left: 0.1rem;
 }
