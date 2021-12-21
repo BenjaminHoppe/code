@@ -41,9 +41,11 @@ h2.notion-heading {
   opacity: 0.5;
 }
 .notion-column a[target="_blank"]:after {
-  content: url(images/arrow.svg);
+  content: " ";
+  background-image: url("images/arrow.svg");
+  background-size: 16px 16px;
   width: 16px;
-  height: auto;
+  height: 16px;
   margin-left: 0.1rem;
 }
 .notion-column > .notion-heading:first-of-type {
