@@ -41,15 +41,30 @@ h2.notion-heading {
   opacity: 0.5 !important;
 }
 .notion-column a[target="_blank"]:after {
+  display: inline-block;
   content: " " !important;
   background-image: url("images/arrow.svg") !important;
   background-size: 16px 16px !important;
   width: 16px !important;
   height: 16px !important;
-  margin-left: 0.1rem !important;
-  display: inline-block;
+  margin-left: 0.09]rem !important;
   vertical-align: middle;
 }
 .notion-column > .notion-heading:first-of-type {
   margin-top: 0 !important;
+}
+ul.notion-bulleted-list {
+  list-style: none !important;
+  list-style-position: outside !important;
+  margin: 0 0 1rem 1rem !important;
+  padding: 0 !important;
+}
+li.notion-list-item:before {
+  display: inline-block !important;
+  content: " " !important;
+  background-image: url("images/circle.svg") !important;
+  background-size: 16px 16px !important;
+  width: 16px !important;
+  height: 16px !important;
+  text-indent: -1rem !important;
 }
