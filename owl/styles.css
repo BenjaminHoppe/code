@@ -47,6 +47,8 @@ h2.notion-heading {
   width: 16px !important;
   height: 16px !important;
   margin-left: 0.1rem !important;
+  display: inline-block;
+  vertical-align: middle;
 }
 .notion-column > .notion-heading:first-of-type {
   margin-top: 0 !important;
