@@ -1,4 +1,3 @@
-
 /* ———————————————————————————————— */
 /* General */
 /* ———————————————————————————————— */
@@ -7,16 +6,16 @@
 :root {
   --text-color: #222 !important;
   --background-color: #fff !important;
-  --gray-text-color: rgba(34,2,0,0.5) !important;
-  --secondary-color: #E7E7E7 !important;
+  --gray-text-color: rgba(34, 2, 0, 0.5) !important;
+  --secondary-color: #dcdcdc !important;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: #fff !important;
     --background-color: #000 !important;
-    --gray-text-color: rgba(255,255,255,0.5) !important;
-    --secondary-color: #333 !important;
+    --gray-text-color: rgba(255, 255, 255, 0.5) !important;
+    --secondary-color: #555 !important;
   }
 }
 
@@ -25,10 +24,18 @@ body {
   color: var(--text-color) !important;
 }
 
-h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
   color: var(--text-color) !important;
 }
-
 
 /* Hides Notion elements */
 .super-navbar,
@@ -48,7 +55,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li {
 }
 
 /* ———————————————————————————————— */
-/* left-column */
+/* Left column */
 /* ———————————————————————————————— */
 
 /* General column styles */
@@ -59,7 +66,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li {
 .notion-column:first-of-type {
   width: 375px !important;
   height: calc(100vh - 40px) !important;
-  padding: 0px 0px 40px 0px !important;
+  padding: 0 0 40px 0 !important;
   position: fixed !important;
 }
 
@@ -69,9 +76,10 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li {
   font-weight: 400 !important;
 }
 
-h1, h2 {
-  margin: 0px !important;
-  padding: 0px !important;
+h1,
+h2 {
+  margin: 0 !important;
+  padding: 0 !important;
   font-size: 16px !important;
   line-height: 150% !important;
 }
@@ -88,15 +96,11 @@ p {
   line-height: 150% !important;
 }
 
-/* Do we need this? */
-/* .notion-column > h2.notion-heading:first-of-type {
-  margin-top: 2rem !important;
-} */
-
 /* Link styles */
 .notion-semantic-string .link {
   border-bottom: none !important;
   opacity: 1 !important;
+  transition: opacity 0.2s ease-in-out !important;
 }
 .notion-semantic-string .link:hover {
   opacity: 0.5 !important;
@@ -118,17 +122,11 @@ p {
   }
 }
 
-/* Don't think we need this */
-/* .notion-column > .notion-heading:first-of-type {
-  margin-top: 0 !important;
-} */
-
-
 /* Hidden divider so it can be used as a spacer */
 #page-index .notion-divider {
   border: 1px solid transparent;
-  padding: 0px; 
-  margin: auto 0px 0px 0px
+  padding: 0;
+  margin: auto 0 0 0;
 }
 
 /* Bullet list styles */
@@ -150,7 +148,7 @@ li.notion-list-item:before {
 }
 
 @media (prefers-color-scheme: dark) {
-  li.notion-list-item:before  {
+  li.notion-list-item:before {
     background-image: url("images/circle-dark.svg") !important;
   }
 }
@@ -177,18 +175,14 @@ li.notion-list-item:before {
   border-bottom: none !important;
   background-color: tranparent !important;
   padding: 1rem 2rem !important;
-  /* Don't need this */
-/*   border: 1px solid #bababa !important;
-  border-bottom: 1px solid #bababa !important; */
   border: 1px solid var(--secondary-color) !important;
   border-radius: 50px !important;
   color: var(--text-color) !important;
-  transition: all 0.2s ease-in-out !important;
+  transition: background-color 0.2s ease-in-out !important;
 }
 .notion-callout a.link:hover {
   background-color: var(--secondary-color) !important;
   opacity: 1 !important;
-  transition: all 0.2s ease-in-out !important;
 }
 
 /* ———————————————————————————————— */
@@ -215,7 +209,6 @@ li.notion-list-item:before {
 .notion-collection-card {
   box-shadow: none !important;
   background: transparent !important;
-
 }
 
 .notion-collection-card:hover {
@@ -226,7 +219,6 @@ li.notion-list-item:before {
 .notion-collection-gallery .large {
   grid-template-columns: 1fr 1fr 1fr;
 }
-
 
 .notion-collection-card__cover.large {
   height: auto;
