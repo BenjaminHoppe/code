@@ -33,13 +33,13 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li {
 
 :root {
   --arrow-up-right: url("images/arrow-up-right-light.svg") !important;
-  --circle: url("images/circle-light") !important;
+  --circle: url("images/circle-light.svg") !important;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --arrow-up-right: url("images/arrow-up-right-dark.svg") !important;
-    --circle: url("images/circle-dark") !important;
+    --circle: url("images/circle-dark.svg") !important;
   }
 }
 
