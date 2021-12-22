@@ -7,16 +7,16 @@
 :root {
   --text-color: #222 !important;
   --background-color: #fff !important;
-  --gray-text-color: #555 !important;
-  --divider-color: #F2F2F2 !important;
+  --gray-text-color: rgba(34,2,0,0.5) !important;
+  --secondary-color: #E7E7E7 !important;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: #fff !important;
     --background-color: #000 !important;
-    -—gray-text-color: #999!important;
-    --divider-color: #191919 !important;
+    --gray-text-color: rgba(255,255,255,0.5) !important;
+    --secondary-color: #333 !important;
   }
 }
 
@@ -29,19 +29,6 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li {
   color: var(--text-color) !important;
 }
 
-/* Icon variables */
-
-:root {
-  --arrow-up-right: url("images/arrow-up-right-light.svg") !important;
-  --circle: url("images/circle-light.svg") !important;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --arrow-up-right: url("images/arrow-up-right-dark.svg") !important;
-    --circle: url("images/circle-dark.svg") !important;
-  }
-}
 
 /* Hides Notion elements */
 .super-navbar,
@@ -59,13 +46,11 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li {
   padding-top: 40px !important;
 }
 
-
 /* ———————————————————————————————— */
 /* left-column */
 /* ———————————————————————————————— */
 
 /* General column styles */
-
 .notion-column {
   padding: 0 !important;
 }
@@ -78,6 +63,11 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li {
 }
 
 /* Headings */
+/* Should probally group this more globally — Ben  */
+.notion-heading {
+  font-weight: 400 !important;
+}
+
 h1, h2 {
   margin: 0px !important;
   padding: 0px !important;
@@ -103,7 +93,6 @@ p {
 } */
 
 /* Link styles */
-
 .notion-semantic-string .link {
   border-bottom: none !important;
   opacity: 1 !important;
@@ -114,12 +103,18 @@ p {
 .notion-column a[target="_blank"]:after {
   display: inline-block !important;
   content: " " !important;
-  background-image: var(--arrow-up-right) !important;
+  background-image: url("images/arrow-up-right-light.svg") !important;
   background-size: 16px 16px !important;
   width: 16px !important;
   height: 16px !important;
   margin-left: 0.09rem !important;
   vertical-align: middle !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .notion-column a[target="_blank"]:after {
+    background-image: url("images/arrow-up-right-dark.svg") !important;
+  }
 }
 
 /* Don't think we need this */
@@ -146,7 +141,7 @@ ul.notion-bulleted-list {
 li.notion-list-item:before {
   display: inline-block !important;
   content: " " !important;
-  background-image: var(--circle) !important;
+  background-image: url("images/circle-light.svg") !important;
   background-size: 16px 16px !important;
   width: 18px !important;
   height: 18px !important;
@@ -154,10 +149,16 @@ li.notion-list-item:before {
   margin-right: 0.5rem !important;
 }
 
+@media (prefers-color-scheme: dark) {
+  li.notion-list-item:before  {
+    background-image: url("images/circle-dark.svg") !important;
+  }
+}
+
 /* Button styles */
 .notion-callout {
   padding: 0 !important;
-  margin: 4rem 0 2rem 0 !important;
+  margin: 2rem 0 !important;
 }
 .notion-callout__icon {
   display: none !important;
@@ -174,18 +175,20 @@ li.notion-list-item:before {
 }
 .notion-callout a.link {
   border-bottom: none !important;
-  background-color: white !important;
-  padding: 1rem 1.5rem !important;
-  border: 1px solid #bababa !important;
-  border-bottom: 1px solid #bababa !important;
-  border-radius: 8px !important;
-  color: #222222 !important;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important;
+  background-color: tranparent !important;
+  padding: 1rem 2rem !important;
+  /* Don't need this */
+/*   border: 1px solid #bababa !important;
+  border-bottom: 1px solid #bababa !important; */
+  border: 1px solid var(--secondary-color) !important;
+  border-radius: 50px !important;
+  color: var(--text-color) !important;
+  transition: all 0.2s ease-in-out !important;
 }
 .notion-callout a.link:hover {
-  color: white !important;
-  background-color: #222222 !important;
+  background-color: var(--secondary-color) !important;
   opacity: 1 !important;
+  transition: all 0.2s ease-in-out !important;
 }
 
 /* ———————————————————————————————— */
@@ -194,6 +197,7 @@ li.notion-list-item:before {
 
 .notion-column:nth-of-type(2) {
   margin-left: calc(375px + 40px) !important;
+  width: 100% !important;
 }
 
 .notion-collection-gallery {
@@ -208,6 +212,7 @@ li.notion-list-item:before {
 
 .notion-collection-card {
   box-shadow: none !important;
+  background: transparent !important;
 }
 
 .notion-collection-card:hover {
