@@ -1,44 +1,109 @@
-body {
-  color: #222222 !important;
+
+/* ———————————————————————————————— */
+/* General */
+/* ———————————————————————————————— */
+
+/* Colors */
+:root {
+  --text-color: #222 !important;
+  --background-color: #fff !important;
+  --gray-text-color: #555 !important;
+  --divider-color: #F2F2F2 !important;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #fff !important;
+    --background-color: #000 !important;
+    -—gray-text-color: #999!important;
+    --divider-color: #191919 !important;
+  }
+}
+
+body {
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+  color: var(--text-color) !important;
+}
+
+/* Icon variables */
+
+:root {
+  --arrow-up-right: url("images/arrow-up-right-light.svg") !important;
+  --circle: url("images/circle-light") !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --arrow-up-right: url("images/arrow-up-right-dark.svg") !important;
+    --circle: url("images/circle-dark") !important;
+  }
+}
+
+/* Hides Notion elements */
 .super-navbar,
 .notion-header__title,
 .notion-collection__header,
 .notion-header {
   display: none !important;
 }
+
+/* Super content */
 .super-content {
   padding-left: calc(env(safe-area-inset-left) + 40px) !important;
   padding-right: calc(env(safe-area-inset-right) + 40px) !important;
   padding-bottom: 10vh !important;
   padding-top: 40px !important;
 }
-.notion-collection-gallery {
-  border-top: 0 !important;
+
+
+/* ———————————————————————————————— */
+/* left-column */
+/* ———————————————————————————————— */
+
+/* General column styles */
+
+.notion-column {
   padding: 0 !important;
 }
-.notion-collection-card,
-.notion-collection-card__cover img {
-  border-radius: 0 !important;
+
+.notion-column:first-of-type {
+  width: 375px !important;
+  height: calc(100vh - 40px) !important;
+  padding: 0px 0px 40px 0px !important;
+  position: fixed !important;
 }
-.notion-collection-card {
-  box-shadow: none !important;
-}
-.notion-collection-card:hover {
-  background: transparent !important;
-  opacity: 0.5 !important;
-}
-h1.notion-heading {
+
+/* Headings */
+h1, h2 {
+  margin: 0px !important;
+  padding: 0px !important;
   font-size: 16px !important;
+  line-height: 150% !important;
 }
+
 h2.notion-heading {
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  color: var(--gray-text-color) !important;
+  font-weight: 400 !important;
+}
+
+p {
   font-size: 16px !important;
-  color: #bababa !important;
-  margin-top: 2rem !important;
+  line-height: 150% !important;
 }
-.notion-column > h2.notion-heading:first-of-type {
+
+/* Do we need this? */
+/* .notion-column > h2.notion-heading:first-of-type {
   margin-top: 2rem !important;
-}
+} */
+
+/* Link styles */
+
 .notion-semantic-string .link {
   border-bottom: none !important;
   opacity: 1 !important;
@@ -49,22 +114,29 @@ h2.notion-heading {
 .notion-column a[target="_blank"]:after {
   display: inline-block !important;
   content: " " !important;
-  background-image: url("images/arrow.svg") !important;
+  background-image: var(--arrow-up-right) !important;
   background-size: 16px 16px !important;
   width: 16px !important;
   height: 16px !important;
-  margin-left: 0.09]rem !important;
+  margin-left: 0.09rem !important;
   vertical-align: middle !important;
 }
-.notion-column > .notion-heading:first-of-type {
+
+/* Don't think we need this */
+/* .notion-column > .notion-heading:first-of-type {
   margin-top: 0 !important;
+} */
+
+
+/* Hidden so divider can be used as a spacer */
+#page-index .notion-divider {
+  border: 1px solid transparent;
+  padding: 0px; 
+  margin: auto 0px 0px 0px
 }
-.notion-column {
-  padding: 0 !important;
-}
-.notion-column:first-child {
-  max-width: 500px !important;
-}
+
+
+/* Bullet list styles */
 ul.notion-bulleted-list {
   list-style: none !important;
   list-style-position: outside !important;
@@ -74,13 +146,15 @@ ul.notion-bulleted-list {
 li.notion-list-item:before {
   display: inline-block !important;
   content: " " !important;
-  background-image: url("images/circle.svg") !important;
+  background-image: var(--circle) !important;
   background-size: 16px 16px !important;
   width: 18px !important;
   height: 18px !important;
   vertical-align: middle !important;
   margin-right: 0.5rem !important;
 }
+
+/* Button styles */
 .notion-callout {
   padding: 0 !important;
   margin: 4rem 0 2rem 0 !important;
@@ -112,4 +186,31 @@ li.notion-list-item:before {
   color: white !important;
   background-color: #222222 !important;
   opacity: 1 !important;
+}
+
+/* ———————————————————————————————— */
+/* Photo gallery */
+/* ———————————————————————————————— */
+
+.notion-column:nth-of-type(2) {
+  margin-left: calc(375px + 40px) !important;
+}
+
+.notion-collection-gallery {
+  border-top: 0 !important;
+  padding: 0 !important;
+}
+
+.notion-collection-card,
+.notion-collection-card__cover img {
+  border-radius: 0 !important;
+}
+
+.notion-collection-card {
+  box-shadow: none !important;
+}
+
+.notion-collection-card:hover {
+  background: transparent !important;
+  opacity: 0.5 !important;
 }
