@@ -1,3 +1,6 @@
+body {
+  color: #222222 !important;
+}
 .super-navbar,
 .notion-header__title,
 .notion-collection__header,
@@ -99,8 +102,8 @@ li.notion-list-item:before {
   border-bottom: none !important;
   background-color: white !important;
   padding: 1rem 1.5rem !important;
-  border: 1px solid #888888;
-  border-bottom: 1px solid #888888 !important;
+  border: 1px solid #bababa !important;
+  border-bottom: 1px solid #bababa !important;
   border-radius: 8px !important;
   color: #222222 !important;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important;
