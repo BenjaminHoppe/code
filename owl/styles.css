@@ -34,7 +34,8 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li {
 .super-navbar,
 .notion-header__title,
 .notion-collection__header,
-.notion-header {
+.notion-header,
+.notion-collection__header-wrapper {
   display: none !important;
 }
 
@@ -123,13 +124,12 @@ p {
 } */
 
 
-/* Hidden so divider can be used as a spacer */
+/* Hidden divider so it can be used as a spacer */
 #page-index .notion-divider {
   border: 1px solid transparent;
   padding: 0px; 
   margin: auto 0px 0px 0px
 }
-
 
 /* Bullet list styles */
 ul.notion-bulleted-list {
@@ -203,6 +203,8 @@ li.notion-list-item:before {
 .notion-collection-gallery {
   border-top: 0 !important;
   padding: 0 !important;
+  grid-gap: 40px !important;
+  gap: 40px !important;
 }
 
 .notion-collection-card,
@@ -213,9 +215,24 @@ li.notion-list-item:before {
 .notion-collection-card {
   box-shadow: none !important;
   background: transparent !important;
+
 }
 
 .notion-collection-card:hover {
   background: transparent !important;
   opacity: 0.5 !important;
+}
+
+.notion-collection-gallery .large {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.notion-collection-card__cover.large {
+  height: auto;
+  max-height: none;
+}
+
+.notion-collection-card__cover {
+  min-height: 215px !important;
 }
