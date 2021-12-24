@@ -1,7 +1,7 @@
 console.log(window)
-console.log(document)
-import React from 'react';
-console.log(React)
+console.log("document", document)
+import * from 'react';
+
 if (typeof window !== 'undefined'){
   const darkButton = document.getElementById('dark');
 const body = document.body;
