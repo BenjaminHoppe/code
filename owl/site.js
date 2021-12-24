@@ -1,4 +1,4 @@
-if (typeof window === 'undefined'){
+if (typeof window !== 'undefined'){
   const darkButton = document.getElementById('dark');
 const body = document.body;
 
