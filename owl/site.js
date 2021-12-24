@@ -1,6 +1,7 @@
-const darkbutton = document.getElementById('dark');
+const darkButton = document.getElementById('dark');
 const body = document.body;
-
-darkbutton.onclick = () => {
+console.log(darkButton)
+darkButton.onclick = () => {
+  console.log('clicked')
   body.classList.add('dark');
 };
