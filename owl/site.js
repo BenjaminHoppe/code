@@ -1,23 +1,14 @@
 console.log(window)
 console.log("document", document)
+console.log("document.getElementById", document.getElementById)
 
 
-if (typeof window !== 'undefined'){
-  const darkButton = document.getElementById('dark');
+const darkButton = document.getElementById('dark');
 const body = document.body;
-
+console.log(document.body)
+console.log(document.getElementsByTagName("body"))
 darkButton.onclick = () => {
   body.classList.add('dark');
 };
-}
 
-if (typeof window === 'undefined'){
-  console.log('bla')
-  console.log(document)
-  const darkButton = document.getElementById('dark');
-const body = document.body;
 
-darkButton.onclick = () => {
-  body.classList.add('dark');
-};
-}
