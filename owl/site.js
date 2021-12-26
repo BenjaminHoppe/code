@@ -8,7 +8,8 @@ console.log("document.getElementById('dark')", document.getElementById('dark'))
 console.log("document.getElementByClassName)", document.getElementsByClassName("switch"))
 
 const body = console.log(document.getElementsByTagName("body"))
-darkButton.onclick = () => {
+darkButton.onclick = function() {
+  alert('blah');
   console.log('adding tag to body: ', body)
   body.classList.add('dark');
   console.log(body)
