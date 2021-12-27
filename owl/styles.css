@@ -199,7 +199,7 @@ li.notion-list-item:before {
   padding: 0 !important;
   gap: 40px !important;
   display: flex !important;
-/*   flex-wrap: wrap !important; */
+  /*   flex-wrap: wrap !important; */
   flex-flow: column wrap !important;
   max-height: 900px !important;
 }
@@ -267,10 +267,9 @@ li.notion-list-item:before {
 /* Light swicth */
 /* ———————————————————————————————— */
 
-.dark {
+[data-theme="dark"] {
   --text-color: #fff !important;
   --background-color: #000 !important;
   --gray-text-color: rgba(255, 255, 255, 0.5) !important;
   --secondary-color: #555 !important;
 }
-

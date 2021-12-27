@@ -1,6 +1,7 @@
-const darkButton = document.getElementById('dark');
-const body = document.getElementByTagName('body');
-
-darkButton.onclick = function() {
-  body.classList.add('dark');
-};
+document.addEventListener
+  ("keydown", function(event) {
+    if (event.key === "1") {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+});
