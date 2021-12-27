@@ -9,6 +9,7 @@
   --background-color: #fff !important;
   --gray-text-color: rgba(34, 2, 0, 0.5) !important;
   --secondary-color: #dcdcdc !important;
+  --circle: url("images/circle-light.svg") !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +18,7 @@
     --background-color: #000 !important;
     --gray-text-color: rgba(255, 255, 255, 0.5) !important;
     --secondary-color: #555 !important;
+    --circle: url("images/circle-dark.svg") !important;
   }
 }
 
@@ -140,7 +142,7 @@ ul.notion-bulleted-list {
 li.notion-list-item:before {
   display: inline-block !important;
   content: " " !important;
-  background-image: url("images/circle-light.svg") !important;
+  background-image: var(--circle) !important;
   background-size: 16px 16px !important;
   width: 18px !important;
   height: 18px !important;
@@ -150,7 +152,7 @@ li.notion-list-item:before {
 
 @media (prefers-color-scheme: dark) {
   li.notion-list-item:before {
-    background-image: url("images/circle-dark.svg") !important;
+    background-image: var(--circle) !important;
   }
 }
 
@@ -265,7 +267,7 @@ li.notion-list-item:before {
 }
 
 /* ———————————————————————————————— */
-/* Light swicth */
+/* Light switch */
 /* ———————————————————————————————— */
 
 [data-theme="dark"] {
@@ -273,4 +275,5 @@ li.notion-list-item:before {
   --background-color: #000 !important;
   --gray-text-color: rgba(255, 255, 255, 0.5) !important;
   --secondary-color: #555 !important;
+  --circle: url("images/circle-dark.svg") !important;
 }
