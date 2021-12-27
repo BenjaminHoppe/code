@@ -3,7 +3,6 @@
 /* ———————————————————————————————— */
 
 /* Colors */
-[data-theme="light"],
 :root {
   --text-color: #222 !important;
   --background-color: #fff !important;
@@ -273,6 +272,14 @@ li.notion-list-item:before {
 /* Light switch */
 /* ———————————————————————————————— */
 
+[data-theme="light"] {
+  --text-color: #222 !important;
+  --background-color: #fff !important;
+  --gray-text-color: rgba(34, 2, 0, 0.5) !important;
+  --secondary-color: #dcdcdc !important;
+  --circle: 1px solid #222 !important;
+  --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
+}
 [data-theme="dark"] {
   --text-color: #fff !important;
   --background-color: #000 !important;
