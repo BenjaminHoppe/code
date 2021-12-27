@@ -10,6 +10,7 @@
   --gray-text-color: rgba(34, 2, 0, 0.5) !important;
   --secondary-color: #dcdcdc !important;
   --circle: 1px solid #222 !important;
+  --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +20,7 @@
     --gray-text-color: rgba(255, 255, 255, 0.5) !important;
     --secondary-color: #555 !important;
     --circle: 1px solid #efefef !important;
+    --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-dark.svg") !important;
   }
 }
 
@@ -111,7 +113,7 @@ p {
 .notion-column a[target="_blank"]:after {
   display: inline-block !important;
   content: " " !important;
-  background-image: url("images/arrow-up-right-light.svg") !important;
+  background-image: var(--link-arrow) !important;
   background-size: 16px 16px !important;
   width: 16px !important;
   height: 16px !important;
@@ -121,7 +123,7 @@ p {
 
 @media (prefers-color-scheme: dark) {
   .notion-column a[target="_blank"]:after {
-    background-image: url("images/arrow-up-right-dark.svg") !important;
+    background-image: var(--link-arrow) !important;
   }
 }
 
@@ -141,10 +143,11 @@ ul.notion-bulleted-list {
 }
 li.notion-list-item:before {
   display: inline-block !important;
-  width: 16px !important;
-  height: 16px !important;
+  content: " ";
+  width: 10px !important;
+  height: 10px !important;
   vertical-align: middle !important;
-  margin-right: 0.5rem !important;
+  margin: 0 0.8rem 0.15rem 0 !important;
   border: var(--circle) !important;
   border-radius: 9999px !important;
   background: transparent !important;
@@ -276,4 +279,5 @@ li.notion-list-item:before {
   --gray-text-color: rgba(255, 255, 255, 0.5) !important;
   --secondary-color: #555 !important;
   --circle: 1px solid #efefef !important;
+  --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-dark.svg") !important;
 }
