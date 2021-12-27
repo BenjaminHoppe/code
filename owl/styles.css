@@ -3,6 +3,7 @@
 /* ———————————————————————————————— */
 
 /* Colors */
+[data-theme="light"],
 :root {
   --text-color: #222 !important;
   --background-color: #fff !important;
