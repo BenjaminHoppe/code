@@ -1,9 +1,14 @@
+let theme = localStorage.getItem('data-theme');
+const checkbox = document.getElementById('switch');
+
 (function(){
     // document.documentElement.setAttribute('data-theme', localStorage.getItem('data-theme'));
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       changeThemeToDark();
+      checkbox.checked = true;
     } else {
       changeThemeToLight();
+      checkbox.checked = false;
     }   
 })();
 
@@ -19,8 +24,6 @@ document.addEventListener
     }
 });
 
-let theme = localStorage.getItem('data-theme');
-const checkbox = document.getElementById('switch');
 const changeThemeToDark = () =>{
   document.documentElement.setAttribute('data-theme', 'dark')
   localStorage.setItem('data-theme', 'dark')
