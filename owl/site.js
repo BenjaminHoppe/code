@@ -27,11 +27,6 @@ const changeThemeToLight = () =>{
 }
 
 
-checkbox.addEventListener('change', () => {
-  let theme = localStorage.getItem('data-theme');
-  if (theme === 'dark') {
-    changeThemeToLight()
-  } else {
-      changeThemeToDark()
-    }
+checkbox.addEventListener('change', (event) => {
+  (event.target.checked) ? changeThemeToLight() : changeThemeToDark();
 });
