@@ -5,7 +5,7 @@
 /* Colors */
 :root {
   --text-color: #222 !important;
-  --background-color: #fff !important;
+  --background-color: white !important;
   --gray-text-color: rgba(34, 2, 0, 0.5) !important;
   --secondary-color: #dcdcdc !important;
   --circle: 1px solid #222 !important;
@@ -15,7 +15,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: #efefef !important;
-    --background-color: #000 !important;
+    --background-color: black !important;
     --gray-text-color: rgba(255, 255, 255, 0.5) !important;
     --secondary-color: #555 !important;
     --circle: 1px solid #efefef !important;
@@ -275,15 +275,15 @@ li.notion-list-item:before {
 
 [data-theme="light"] {
   --text-color: #222 !important;
-  --background-color: #fff !important;
+  --background-color: white !important;
   --gray-text-color: rgba(34, 2, 0, 0.5) !important;
   --secondary-color: #dcdcdc !important;
   --circle: 1px solid #222 !important;
   --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
 }
 [data-theme="dark"] {
-  --text-color: #fff !important;
-  --background-color: #000 !important;
+  --text-color: white !important;
+  --background-color: black !important;
   --gray-text-color: rgba(255, 255, 255, 0.5) !important;
   --secondary-color: #555 !important;
   --circle: 1px solid #efefef !important;
@@ -294,7 +294,7 @@ li.notion-list-item:before {
   position: fixed !important;
   bottom: 0 !important;
   right: 0 !important;
-  margin: 1rem !important;
+  margin: 20px !important;
   z-index: 2 !important;
 }
 
@@ -308,10 +308,11 @@ label {
   cursor: pointer;
   text-indent: -9999px;
   width: 3rem;
-  height: 1.65rem;
-  background: gray;
+  height: 1.75rem;
+  background: white;
   float: right;
-  border-radius: 100px;
+  border-radius: 9999px;
+  border: 1px solid var(--secondary-color);
   position: relative;
 }
 
@@ -322,13 +323,14 @@ label:after {
   left: 5px;
   width: 1rem;
   height: 1rem;
-  background: #fff;
+  background: white;
   border-radius: 9999px;
   transition: 0.1s;
 }
 
 input:checked + label {
-  background: darkgray;
+  background: black;
+  border: 1px solid var(--secondary-color);
 }
 
 input:checked + label:after {
