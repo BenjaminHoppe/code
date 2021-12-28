@@ -1,5 +1,3 @@
-console.log("localStorage.getItem('data-theme')", localStorage.getItem('data-theme'))
-
 (function(){
     document.documentElement.setAttribute('data-theme', localStorage.getItem('data-theme'));    
 })();
