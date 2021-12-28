@@ -312,6 +312,10 @@ li.notion-list-item:before {
   .notion-collection-gallery {
     max-height: unset !important;
   }
+  .super-content {
+    padding: 40px !important;
+    
+  }
 
 }
 
