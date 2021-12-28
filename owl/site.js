@@ -24,12 +24,12 @@ document.addEventListener
     }
 });
 
-const changeThemeToDark = () =>{
+function changeThemeToDark () {
   document.documentElement.setAttribute('data-theme', 'dark')
   localStorage.setItem('data-theme', 'dark')
 }
 
-const changeThemeToLight = () =>{
+function changeThemeToLight () {
   document.documentElement.setAttribute('data-theme', 'light')
   localStorage.setItem('data-theme', 'light')
 }
