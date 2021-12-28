@@ -1,5 +1,10 @@
 (function(){
-    document.documentElement.setAttribute('data-theme', localStorage.getItem('data-theme'));    
+    // document.documentElement.setAttribute('data-theme', localStorage.getItem('data-theme'));
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      changeThemeToDark();
+    } else {
+      changeThemeToLight();
+    }   
 })();
 
 document.addEventListener
