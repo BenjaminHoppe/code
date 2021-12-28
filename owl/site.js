@@ -28,5 +28,5 @@ const changeThemeToLight = () =>{
 
 
 checkbox.addEventListener('change', (event) => {
-  (event.target.checked) ? changeThemeToLight() : changeThemeToDark();
+  (event.target.checked) ? changeThemeToDark() : changeThemeToLight();
 });
