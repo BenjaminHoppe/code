@@ -2,8 +2,13 @@ let theme = localStorage.getItem('data-theme');
 const checkbox = document.getElementById('switch');
 
 (function(){
-    // document.documentElement.setAttribute('data-theme', localStorage.getItem('data-theme'));
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem('data-theme') === 'dark'){
+      changeThemeToDark();
+      checkbox.checked = true;
+    } else if (localStorage.getItem('data-theme') === 'light') {
+      changeThemeToLight();
+      checkbox.checked = false;
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       changeThemeToDark();
       checkbox.checked = true;
     } else {
