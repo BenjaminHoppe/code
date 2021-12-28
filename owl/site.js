@@ -11,21 +11,26 @@ document.addEventListener
 });
 
 let theme = localStorage.getItem('data-theme');
-const changeThemeToDark = () => {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('data-theme', 'dark');
-}
-const changeThemeToLight = () => {
-    document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('data-theme', 'light');
+const checkbox = document.getElementById('switch');
+const changeThemeToDark = () =>{
+  document.documentElement.setAttribute('data-theme', 'dark')
+  localStorage.setItem('data-theme', 'dark')
 }
 
-const checkbox = document.getElementById('switch');
-checkbox.addEventListener('change', () => {
-    let theme = localStorage.getItem('data-theme');
-    if (theme ==='dark'){
-        changeThemeToLight()
-    } else {
-        changeThemeToDark()
-    }   
+const changeThemeToLight = () =>{
+  document.documentElement.setAttribute('data-theme', 'light')
+  localStorage.setItem('data-theme', 'light')
+}
+
+if(theme === 'dark'){
+  changeThemeToDark()
+}
+
+checkbox.addEventListener('change', ()=> {
+  let theme = localStorage.getItem('data-theme');
+  if (theme ==='dark'){
+    changeThemeToLight()
+  } else {
+      changeThemeToDark()
+    }
 });
