@@ -220,6 +220,7 @@ li.notion-list-item:before {
   align-self: center !important;
   height: 100% !important;
   max-width: 30% !important;
+  transition: opacity 0.2s ease-in-out !important;
 }
 
 .notion-collection-card:hover {
@@ -289,17 +290,14 @@ li.notion-list-item:before {
   --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-dark.svg") !important;
 }
 
-
 /* ———————————————————————————————— */
 /* Mobile Styles */
 /* ———————————————————————————————— */
 
 @media screen and (max-width: 764px) {
-    
-    
   .notion-column:first-of-type {
     width: 100% !important;
-    height: unset  !important;
+    height: unset !important;
     padding: 0 0 40px 0 !important;
     position: static !important;
   }
@@ -314,9 +312,5 @@ li.notion-list-item:before {
   }
   .super-content {
     padding: 40px !important;
-    
   }
-
 }
-
-

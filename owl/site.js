@@ -9,3 +9,8 @@ document.addEventListener
       localStorage.setItem('theme', 'dark');
     }
 });
+
+document.getElementById("dark").addEventListener("click", function() {
+  document.documentElement.setAttribute('data-theme', 'dark');
+  localStorage.setItem('theme', 'dark');
+});
