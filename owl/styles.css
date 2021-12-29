@@ -307,13 +307,17 @@ input.theme-switch[type="checkbox"] {
 label {
   cursor: pointer;
   text-indent: -9999px;
-  width: 3rem;
+  width: 3.25rem;
   height: 1.75rem;
   background: white;
   float: right;
   border-radius: 9999px;
   border: 1px solid var(--secondary-color);
   position: relative;
+  background-image: url("https://code.benjaminhoppe.co/owl/images/moon.svg");
+  background-position: 5px calc(100% - 5px);
+  background-size: 1rem;
+  background-repeat: no-repeat;
 }
 
 label:after {
@@ -332,8 +336,8 @@ input:checked + label {
   background: black;
   border: 1px solid var(--secondary-color);
   background-image: url("https://code.benjaminhoppe.co/owl/images/sun.svg");
-  background-position: 0.5rem 0;
-  background-size: contain;
+  background-position: 5px 5px;
+  background-size: 1rem;
   background-repeat: no-repeat;
 }
 
