@@ -315,7 +315,7 @@ label {
   border: 1px solid var(--secondary-color);
   position: relative;
   background-image: url("https://code.benjaminhoppe.co/owl/images/moon.svg");
-  background-position: 5px calc(100% - 5px);
+  background-position: calc(100% - 5px) 5px;
   background-size: 1rem;
   background-repeat: no-repeat;
 }
