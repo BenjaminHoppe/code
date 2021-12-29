@@ -331,6 +331,10 @@ label:after {
 input:checked + label {
   background: black;
   border: 1px solid var(--secondary-color);
+  background-image: url("https://code.benjaminhoppe.co/owl/images/moon.svg");
+  background-position: 0.5rem 0;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 input:checked + label:after {
