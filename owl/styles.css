@@ -5,11 +5,12 @@
 /* Typography */
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
+html,
 body {
   font-family: "Space Grotesk", sans-serif !important;
+  font-size: 17px !important;
 }
 
-/* Colors */
 :root {
   --text-color: #222 !important;
   --background-color: white !important;
@@ -212,6 +213,8 @@ li.notion-list-item:before {
   gap: 40px !important;
   display: flex !important;
   flex-flow: row wrap !important;
+  width: 100%;
+  height: auto;
   max-height: 900px !important;
 }
 
