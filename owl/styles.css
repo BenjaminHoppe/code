@@ -2,14 +2,12 @@
 /* General */
 /* ———————————————————————————————— */
 
-
 /* Typography */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 body {
-  font-family: 'Space Grotesk', sans-serif !important;
+  font-family: "Space Grotesk", sans-serif !important;
 }
-
 
 /* Colors */
 :root {
@@ -93,7 +91,7 @@ h1,
 h2 {
   margin: 0 !important;
   padding: 0 !important;
-  font-size: 16px !important;
+  font-size: 17px !important;
   line-height: 150% !important;
 }
 
@@ -105,7 +103,7 @@ h2.notion-heading {
 }
 
 p {
-  font-size: 16px !important;
+  font-size: 17px !important;
   line-height: 150% !important;
 }
 
@@ -122,9 +120,9 @@ p {
   display: inline-block !important;
   content: " " !important;
   background-image: var(--link-arrow) !important;
-  background-size: 16px 16px !important;
-  width: 16px !important;
-  height: 16px !important;
+  background-size: 17px 17px !important;
+  width: 17px !important;
+  height: 17px !important;
   margin-left: 0.09rem !important;
   vertical-align: middle !important;
 }
@@ -213,8 +211,7 @@ li.notion-list-item:before {
   padding: 0 !important;
   gap: 40px !important;
   display: flex !important;
-  /*   flex-wrap: wrap !important; */
-  flex-flow: column wrap !important;
+  flex-flow: row wrap !important;
   max-height: 900px !important;
 }
 
