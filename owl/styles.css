@@ -215,7 +215,7 @@ li.notion-list-item:before {
   border-top: 0 !important;
   padding: 0 !important;
   gap: 40px !important;
-  column-count: 4;
+  column-count: 3;
   display: block !important;
   /* flex-flow: row wrap !important; */
   width: 100%;
