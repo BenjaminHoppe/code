@@ -265,15 +265,21 @@ li.notion-list-item:before {
   padding-bottom: 0 !important;
 }
 
-@media screen and (min-width: 1773px) {
+@media screen and (min-width: 2100px) {
   .notion-collection-gallery {
     column-count: 4;
   }
 }
 
-@media screen and (max-width: 1294px) {
+@media screen and (min-width: 1773px) {
   .notion-collection-gallery {
     column-count: 3;
+  }
+}
+
+@media screen and (max-width: 1294px) {
+  .notion-collection-gallery {
+    column-count: 2;
   }
 }
 
@@ -283,7 +289,7 @@ li.notion-list-item:before {
     width: 100% !important;
   }
   .notion-collection-gallery {
-    column-count: 2;
+    column-count: 1;
   }
 }
 
