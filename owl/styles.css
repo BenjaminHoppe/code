@@ -267,19 +267,19 @@ li.notion-list-item:before {
 
 @media screen and (min-width: 2100px) {
   .notion-collection-gallery {
-    column-count: 4;
+    column-count: 4 !important;
   }
 }
 
 @media screen and (min-width: 1773px) {
   .notion-collection-gallery {
-    column-count: 3;
+    column-count: 3 !important;
   }
 }
 
 @media screen and (max-width: 1294px) {
   .notion-collection-gallery {
-    column-count: 2;
+    column-count: 2 !important;
   }
 }
 
@@ -289,7 +289,7 @@ li.notion-list-item:before {
     width: 100% !important;
   }
   .notion-collection-gallery {
-    column-count: 1;
+    column-count: 1 !important;
   }
 }
 
