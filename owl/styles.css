@@ -234,6 +234,7 @@ li.notion-list-item:before {
   align-self: center !important;
   height: 100% !important;
   margin-bottom: 40px !important;
+  display: inline-block !important;
   /* max-width: 30% !important; */
   transition: opacity 0.2s ease-in-out !important;
 }
