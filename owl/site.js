@@ -43,3 +43,11 @@ function changeThemeToLight () {
 checkbox.addEventListener('change', (event) => {
   (event.target.checked) ? changeThemeToDark() : changeThemeToLight();
 });
+
+
+document.getElementByClassName('notion-column').innerHTML = '
+<div class="toggle-container">
+  <input type="checkbox" id="switch" class="theme-switch" name="theme" />
+  <label for="switch">Toggle</label>
+</div>
+';
