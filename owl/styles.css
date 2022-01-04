@@ -78,7 +78,7 @@ li {
 .notion-column:first-of-type {
   width: 375px !important;
   height: calc(100vh - 40px) !important;
-  padding: 0 0 40px 0 !important;
+  padding: 0 0 90px 0 !important;
   position: fixed !important;
 }
 
@@ -315,8 +315,8 @@ li.notion-list-item:before {
 .toggle-container {
   position: fixed !important;
   bottom: 0 !important;
-  right: 0 !important;
-  margin: 20px !important;
+  left: 0 !important;
+  margin: 0 0 40px 35px !important;
   z-index: 2 !important;
 }
 
