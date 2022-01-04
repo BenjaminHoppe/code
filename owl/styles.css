@@ -62,7 +62,7 @@ li {
 .super-content {
   padding-left: calc(env(safe-area-inset-left) + 40px) !important;
   padding-right: calc(env(safe-area-inset-right) + 40px) !important;
-  padding-bottom: 10vh !important;
+  padding-bottom: 40px !important;
   padding-top: 40px !important;
 }
 
@@ -107,6 +107,12 @@ p {
   font-size: 17px !important;
   line-height: 150% !important;
 }
+
+.notion-column:first-of-type > .notion-bulleted-list {
+  margin-bottom: 0px !important;
+}
+
+
 
 /* Link styles */
 .notion-semantic-string .link {
