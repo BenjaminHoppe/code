@@ -112,8 +112,6 @@ p {
   margin-bottom: 0px !important;
 }
 
-
-
 /* Link styles */
 .notion-semantic-string .link {
   border-bottom: none !important;
@@ -217,11 +215,12 @@ li.notion-list-item:before {
   border-top: 0 !important;
   padding: 0 !important;
   gap: 40px !important;
-  display: flex !important;
-  flex-flow: row wrap !important;
+  column-count: 4;
+  /* display: flex !important; */
+  /* flex-flow: row wrap !important; */
   width: 100%;
   height: auto;
-  max-height: 900px !important;
+  /* max-height: 900px !important; */
 }
 
 .notion-collection-card,
@@ -234,7 +233,7 @@ li.notion-list-item:before {
   background: transparent !important;
   align-self: center !important;
   height: 100% !important;
-  max-width: 30% !important;
+  /* max-width: 30% !important; */
   transition: opacity 0.2s ease-in-out !important;
 }
 
@@ -267,7 +266,7 @@ li.notion-list-item:before {
 
 @media screen and (max-width: 1294px) {
   .notion-collection-card {
-    max-width: 46% !important;
+    /* max-width: 46% !important; */
   }
 }
 
@@ -280,7 +279,7 @@ li.notion-list-item:before {
 
 @media screen and (min-width: 1773px) {
   .notion-collection-card {
-    max-width: 22% !important;
+    /* max-width: 22% !important; */
   }
 }
 
