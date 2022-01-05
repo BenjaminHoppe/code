@@ -307,7 +307,7 @@ li.notion-list-item:before {
 }
 
 .notion-semantic-string .date {
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
 }
 
 /* ———————————————————————————————— */
