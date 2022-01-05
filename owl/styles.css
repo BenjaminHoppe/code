@@ -292,6 +292,15 @@ li.notion-list-item:before {
 }
 
 /* ———————————————————————————————— */
+/* Single photo page */
+/* ———————————————————————————————— */
+
+.notion-page__property-name,
+.notion-page__properties .notion-divider {
+  display: none !important;
+}
+
+/* ———————————————————————————————— */
 /* Light switch */
 /* ———————————————————————————————— */
 
