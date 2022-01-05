@@ -18,6 +18,7 @@ body {
   --secondary-color: #dcdcdc !important;
   --circle: 1px solid #222 !important;
   --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
+  --font-size: 17px !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -92,7 +93,7 @@ h1,
 h2 {
   margin: 0 !important;
   padding: 0 !important;
-  font-size: 17px !important;
+  font-size: var(--font-size) !important;
   line-height: 150% !important;
 }
 
@@ -104,12 +105,12 @@ h2.notion-heading {
 }
 
 p {
-  font-size: 17px !important;
+  font-size: var(--font-size) !important;
   line-height: 150% !important;
 }
 
 .notion-column:first-of-type > .notion-bulleted-list {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
 }
 
 /* Link styles */
@@ -126,8 +127,8 @@ p {
   content: " " !important;
   background-image: var(--link-arrow) !important;
   background-size: 17px 17px !important;
-  width: 17px !important;
-  height: 17px !important;
+  width: var(--font-size) !important;
+  height: var(--font-size) !important;
   margin-left: 0.09rem !important;
   vertical-align: middle !important;
 }
@@ -298,6 +299,15 @@ li.notion-list-item:before {
 .notion-page__property-name,
 .notion-page__properties .notion-divider {
   display: none !important;
+}
+
+.notion-page__properties .notion-property {
+  padding: 0 !important;
+  font-size: var(--font-size) !important;
+}
+
+.notion-semantic-string .date {
+  color: var(--secondary-color);
 }
 
 /* ———————————————————————————————— */
