@@ -345,6 +345,7 @@ li.notion-list-item:before {
 
 a.notion-link[href="/"] {
   font-size: 0;
+  margin-top: 40px;
 }
 
 a.notion-link[href="/"]:before {
