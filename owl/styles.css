@@ -355,19 +355,20 @@ a.notion-link[href="/"]:before {
   display: inline-block;
   content: " " !important;
   background-image: var(--back-arrow) !important;
-  background-size: 12px 12px !important;
+  background-size: 17px 17px !important;
   background-repeat: no-repeat !important;
   width: var(--font-size) !important;
   height: var(--font-size) !important;
   vertical-align: middle !important;
   margin-right: 0.35rem !important;
   padding-bottom: 0.35rem !important;
+  font-size: var(--font-size) !important;
 }
 
 a.notion-link[href="/"]:after {
   content: "Back to home";
   display: inline-block;
-  font-size: var(--font-size);
+  font-size: var(--font-size) !important;
 }
 
 /* ———————————————————————————————— */
