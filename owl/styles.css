@@ -338,7 +338,7 @@ li.notion-list-item:before {
   margin-bottom: 20px;
 }
 
-.notion-page__property:last-child {
+.notion-page__properties .notion-property:last-child {
   margin-top: 40px;
 }
 
