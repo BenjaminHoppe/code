@@ -361,8 +361,13 @@ a.notion-link[href="/"]:before {
   height: var(--font-size) !important;
   vertical-align: middle !important;
   margin-right: 0.35rem !important;
-  padding-bottom: 0.35rem !important;
-  font-size: var(--font-size) !important;
+  padding-bottom: 0.65rem !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  a.notion-link[href="/"]:before {
+    background-image: var(--back-arrow) !important;
+  }
 }
 
 a.notion-link[href="/"]:after {
