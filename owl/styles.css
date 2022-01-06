@@ -351,6 +351,9 @@ a.notion-link[href="/"]:before {
   content: var(--back-arrow);
   display: inline-block;
   font-size: var(--font-size);
+  width: var(--font-size) !important;
+  height: var(--font-size) !important;
+  margin-right: 0.09rem !important;
 }
 
 a.notion-link[href="/"]:after {
