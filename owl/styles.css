@@ -316,6 +316,30 @@ li.notion-list-item:before {
   }
 }
 
+.page .super-content.max-width {
+  max-width: 100% !important;
+}
+
+.notion-root {
+  flex-direction: unset !important;
+  justify-content: space-between !important;
+}
+
+.notion-page__properties {
+  flex: 1;
+  max-width: 375px;
+  margin-right: 40px;
+}
+
+.notion-page__property {
+  grid-template-columns: 375px 1fr !important;
+}
+
+.notion-image.page-width {
+  flex: 1;
+  max-width: 800px;
+}
+
 /* ———————————————————————————————— */
 /* Light switch */
 /* ———————————————————————————————— */
