@@ -338,7 +338,7 @@ li.notion-list-item:before {
 
 .notion-image.page-width {
   flex: 1;
-  max-width: 800px;
+  max-width: 800px !important;
 }
 
 /* ———————————————————————————————— */
