@@ -348,11 +348,13 @@ a.notion-link[href="/"] {
 }
 
 a.notion-link[href="/"]:before {
-  content: var(--back-arrow);
   display: inline-block;
-  font-size: var(--font-size);
+  content: " " !important;
+  background-image: var(--back-arrow) !important;
+  background-size: 17px 17px !important;
   width: var(--font-size) !important;
   height: var(--font-size) !important;
+  vertical-align: middle !important;
   margin-right: 0.09rem !important;
 }
 
