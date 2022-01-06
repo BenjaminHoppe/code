@@ -341,6 +341,15 @@ li.notion-list-item:before {
   max-width: 600px !important;
 }
 
+a.notion-link[href="/"] {
+  text-indent: -9999px;
+}
+
+a.notion-link[href="/"]:after {
+  content: "Back to home";
+  display: inline-block;
+}
+
 /* ———————————————————————————————— */
 /* Light switch */
 /* ———————————————————————————————— */
