@@ -316,7 +316,7 @@ li.notion-list-item:before {
   }
 }
 
-.page .super-content.max-width {
+.page > .super-content.max-width {
   max-width: 100% !important;
 }
 
