@@ -357,7 +357,7 @@ a.notion-link[href="/"]:before {
   height: var(--font-size) !important;
   vertical-align: middle !important;
   margin-right: 0.35rem !important;
-  padding-bottom: 0.65rem !important;
+  padding-bottom: 0.7rem !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -367,7 +367,7 @@ a.notion-link[href="/"]:before {
 }
 
 a.notion-link[href="/"]:after {
-  content: "Back to home";
+  content: "Back";
   display: inline-block;
   font-size: var(--font-size) !important;
 }
