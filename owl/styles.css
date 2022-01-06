@@ -333,6 +333,7 @@ li.notion-list-item:before {
 
 .notion-page__property {
   grid-template-columns: 375px 1fr !important;
+  margin-bottom: 40px;
 }
 
 .notion-image.page-width {
