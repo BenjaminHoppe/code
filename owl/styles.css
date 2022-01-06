@@ -450,4 +450,12 @@ label:active:after {
   .super-content {
     padding: 40px !important;
   }
+  .notion-root {
+    flex-direction: column !important;
+    justify-content: unset !important;
+  }
+  .notion-page__properties {
+    max-width: 100%;
+    margin-right: 0;
+  }
 }
