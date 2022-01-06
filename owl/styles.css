@@ -342,11 +342,13 @@ li.notion-list-item:before {
 }
 
 a.notion-link[href="/"] {
+  font-size: 0;
 }
 
 a.notion-link[href="/"]:after {
-  content: "Back to home";
+  content: "← Back to home";
   display: inline-block;
+  font-size: var(--font-size);
 }
 
 /* ———————————————————————————————— */
