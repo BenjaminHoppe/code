@@ -338,6 +338,10 @@ li.notion-list-item:before {
   margin-bottom: 20px;
 }
 
+.notion-page__property:last-child {
+  margin-top: 40px;
+}
+
 .notion-image.page-width {
   flex: 1;
   max-width: 600px !important;
@@ -345,20 +349,19 @@ li.notion-list-item:before {
 
 a.notion-link[href="/"] {
   font-size: 0;
-  margin-top: 40px;
 }
 
 a.notion-link[href="/"]:before {
   display: inline-block;
   content: " " !important;
   background-image: var(--back-arrow) !important;
-  background-size: 17px 17px !important;
+  background-size: 12px 12px !important;
   background-repeat: no-repeat !important;
   width: var(--font-size) !important;
   height: var(--font-size) !important;
   vertical-align: middle !important;
-  margin-right: 0.09rem !important;
-  padding-bottom: 0.65rem !important;
+  margin-right: 0.35rem !important;
+  padding-bottom: 0.35rem !important;
 }
 
 a.notion-link[href="/"]:after {
