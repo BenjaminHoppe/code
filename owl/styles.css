@@ -338,10 +338,6 @@ li.notion-list-item:before {
   margin-bottom: 20px;
 }
 
-.notion-page__properties:last-child {
-  margin-top: 40px;
-}
-
 .notion-image.page-width {
   flex: 1;
   max-width: 600px !important;
