@@ -310,6 +310,12 @@ li.notion-list-item:before {
   color: var(--secondary-color) !important;
 }
 
+@media (prefers-color-scheme: dark) {
+  .notion-semantic-string .date {
+    color: var(--secondary-color) !important;
+  }
+}
+
 /* ———————————————————————————————— */
 /* Light switch */
 /* ———————————————————————————————— */
