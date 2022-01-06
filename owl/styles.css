@@ -307,12 +307,12 @@ li.notion-list-item:before {
 }
 
 .notion-semantic-string .date {
-  color: var(--secondary-color) !important;
+  color: var(--gray-text-color) !important;
 }
 
 @media (prefers-color-scheme: dark) {
   .notion-semantic-string .date {
-    color: var(--secondary-color) !important;
+    color: var(--gray-text-color) !important;
   }
 }
 
