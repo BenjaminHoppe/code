@@ -18,8 +18,8 @@ body {
   --secondary-color: #dcdcdc !important;
   --circle: 1px solid #222 !important;
   --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
-  --back-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-left-light.svg") !important;
   --font-size: 17px !important;
+  --spacer: 40px !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,7 +30,6 @@ body {
     --secondary-color: #555 !important;
     --circle: 1px solid #efefef !important;
     --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-dark.svg") !important;
-    --back-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-left-dark.svg") !important;
     --font-size: 17px !important;
   }
 }
@@ -346,19 +345,14 @@ li.notion-list-item:before {
 
 a.notion-link[href="/"] {
   font-size: 0;
+  display: block;
+  margin-bottom: calc(var(--spacer) * 2);
 }
 
 a.notion-link[href="/"]:before {
   display: inline-block;
   content: "← " !important;
   font-size: var(--font-size) !important;
-  /*  background-image: var(--back-arrow) !important;
-  background-size: var(--font-size) var(--font-size) !important;
-  background-repeat: no-repeat !important;
-  width: var(--font-size) !important;
-  height: var(--font-size) !important;
-  vertical-align: middle !important;
-  margin: 0 0.35rem 0.7rem 0 !important; */
 }
 
 a.notion-link[href="/"]:after {
@@ -378,7 +372,6 @@ a.notion-link[href="/"]:after {
   --secondary-color: #dcdcdc !important;
   --circle: 1px solid #222 !important;
   --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
-  --back-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-left-light.svg") !important;
 }
 [data-theme="dark"] {
   --text-color: white !important;
@@ -387,7 +380,6 @@ a.notion-link[href="/"]:after {
   --secondary-color: #555 !important;
   --circle: 1px solid #efefef !important;
   --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-dark.svg") !important;
-  --back-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-left-dark.svg") !important;
 }
 
 .toggle-container {
