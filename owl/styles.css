@@ -350,14 +350,15 @@ a.notion-link[href="/"] {
 
 a.notion-link[href="/"]:before {
   display: inline-block;
-  content: " " !important;
-  background-image: var(--back-arrow) !important;
+  content: "← " !important;
+  font-size: var(--font-size) !important;
+  /*  background-image: var(--back-arrow) !important;
   background-size: var(--font-size) var(--font-size) !important;
   background-repeat: no-repeat !important;
   width: var(--font-size) !important;
   height: var(--font-size) !important;
   vertical-align: middle !important;
-  margin: 0 0.35rem 0.7rem 0 !important;
+  margin: 0 0.35rem 0.7rem 0 !important; */
 }
 
 a.notion-link[href="/"]:after {
