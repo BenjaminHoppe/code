@@ -349,6 +349,12 @@ li.notion-list-item:before {
   max-width: 600px !important;
 }
 
+@media screen and (min-width: 1773px) {
+  .notion-image.page-width {
+    max-width: 1000px !important;
+  }
+}
+
 a.notion-link[href="/"] {
   font-size: 0;
   display: block;
