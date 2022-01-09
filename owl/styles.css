@@ -37,6 +37,12 @@ body {
 body {
   background-color: var(--background-color) !important;
   color: var(--text-color) !important;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+::selection {
+  color: var(--secondary-color);
+  background: var(--text-color);
 }
 
 h1,
