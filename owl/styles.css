@@ -497,4 +497,11 @@ label:active:after {
     max-width: 100%;
     margin-right: 0;
   }
+  .toggle-container {
+    bottom: unset !important;
+    left: unset !important;
+    top: 0 !important;
+    right: 0 !important;
+    margin: var(--spacer) var(--spacer) 0 0 !important;
+  }
 }
