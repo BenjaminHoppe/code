@@ -365,6 +365,11 @@ a.notion-link[href="/"]:before {
   display: inline-block;
   content: "← " !important;
   font-size: var(--font-size) !important;
+  transition: transform 0.2s ease-in-out !important;
+}
+
+a.notion-link[href="/"]:hover::before {
+  transform: translateX(0.25rem) !important;
 }
 
 a.notion-link[href="/"]:after {
