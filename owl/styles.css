@@ -350,6 +350,11 @@ li.notion-list-item:before {
   margin-bottom: 20px;
 }
 
+.notion-image {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 .notion-image.page-width {
   flex: 1;
   max-width: 600px !important;
