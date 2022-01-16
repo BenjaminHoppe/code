@@ -116,7 +116,7 @@
 /* Mobile styles */
 /* ———————————————————————————————— */
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 850px) {
     .toggle-container {
       bottom: unset !important;
       left: unset !important;
