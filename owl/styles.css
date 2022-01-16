@@ -281,9 +281,7 @@ li.notion-list-item:before {
   padding-bottom: 0 !important;
 }
 
-/* ———————————————————————————————— */
-/* Photo gallery */
-/* ———————————————————————————————— */
+/* Photo gallery media queries */
 
 
 @media screen and (min-width: 2100px) {
@@ -292,20 +290,20 @@ li.notion-list-item:before {
   }
 }
 
-@media screen and (min-width: 1773px) {
+@media screen and (max-width: 2099px) {
   .notion-collection-gallery {
     column-count: 4 !important;
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (max-width: 1772px) {
   .notion-collection-gallery {
     column-count: 3 !important;
   }
 }
 
 
-@media screen and (min-width: 996px) {
+@media screen and (max-width: 1299px) {
   .notion-collection-gallery {
     column-count: 2 !important;
   }
@@ -320,7 +318,6 @@ li.notion-list-item:before {
     column-count: 1 !important;
   }
 }
-
 /* ———————————————————————————————— */
 /* Single photo page */
 /* ———————————————————————————————— */
