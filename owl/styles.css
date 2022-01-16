@@ -2,36 +2,11 @@
 /* General */
 /* ———————————————————————————————— */
 
-/* Typography */
-/* @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"); */
 
 html,
 body {
   font-family: "Space Grotesk", sans-serif !important;
   font-size: 17px !important;
-}
-
-:root {
-  --text-color: #222 !important;
-  --background-color: white !important;
-  --gray-text-color: rgba(34, 2, 0, 0.5) !important;
-  --secondary-color: #dcdcdc !important;
-  --circle: 1px solid #222 !important;
-  --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
-  --font-size: 17px !important;
-  --spacer: 40px !important;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #efefef !important;
-    --background-color: #121212 !important;
-    --gray-text-color: rgba(255, 255, 255, 0.5) !important;
-    --secondary-color: #555 !important;
-    --circle: 1px solid #efefef !important;
-    --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-dark.svg") !important;
-    --font-size: 17px !important;
-  }
 }
 
 body {
@@ -45,6 +20,11 @@ body {
   background: var(--text-color) !important;
 }
 
+
+/* ———————————————————————————————— */
+/* Typography */
+/* ———————————————————————————————— */
+
 h1,
 h2,
 h3,
@@ -56,7 +36,36 @@ ol,
 ul,
 li {
   color: var(--text-color) !important;
+  font-weight: 400 !important;
 }
+
+/* .notion-heading {
+  font-weight: 400 !important;
+} */
+
+h1,
+h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: var(--font-size) !important;
+  line-height: 150% !important;
+}
+
+h2.notion-heading {
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  color: var(--gray-text-color) !important;
+}
+
+p {
+  font-size: var(--font-size) !important;
+  line-height: 150% !important;
+}
+
+
+/* ———————————————————————————————— */
+/* Super styles */
+/* ———————————————————————————————— */
 
 /* Hides Notion elements */
 .super-navbar,
@@ -76,7 +85,7 @@ li {
 }
 
 /* ———————————————————————————————— */
-/* Left column */
+/* Info column */
 /* ———————————————————————————————— */
 
 /* General column styles */
@@ -91,92 +100,8 @@ li {
   position: fixed !important;
 }
 
-/* Headings */
-/* Should probally group this more globally — Ben  */
-.notion-heading {
-  font-weight: 400 !important;
-}
-
-h1,
-h2 {
-  margin: 0 !important;
-  padding: 0 !important;
-  font-size: var(--font-size) !important;
-  line-height: 150% !important;
-}
-
-h2.notion-heading {
-  margin-top: 2rem !important;
-  margin-bottom: 1rem !important;
-  color: var(--gray-text-color) !important;
-  font-weight: 400 !important;
-}
-
-p {
-  font-size: var(--font-size) !important;
-  line-height: 150% !important;
-}
-
 .notion-column:first-of-type > .notion-bulleted-list {
   margin-bottom: 0 !important;
-}
-
-/* Link styles */
-.notion-semantic-string .link {
-  border-bottom: none !important;
-  opacity: 1 !important;
-  transition: opacity 0.2s ease-in-out !important;
-}
-.notion-semantic-string .link:hover {
-  opacity: 0.5 !important;
-}
-.notion-column a[target="_blank"]:after {
-  display: inline-block !important;
-  content: " " !important;
-  background-image: var(--link-arrow) !important;
-  background-size: var(--font-size) var(--font-size) !important;
-  width: var(--font-size) !important;
-  height: var(--font-size) !important;
-  margin-left: 0.09rem !important;
-  vertical-align: middle !important;
-}
-
-@media (prefers-color-scheme: dark) {
-  .notion-column a[target="_blank"]:after {
-    background-image: var(--link-arrow) !important;
-  }
-}
-
-/* Hidden divider so it can be used as a spacer */
-#page-index .notion-divider {
-  border: 1px solid transparent;
-  padding: 0;
-  margin: auto 0 0 0;
-}
-
-/* Bullet list styles */
-ul.notion-bulleted-list {
-  list-style: none !important;
-  list-style-position: outside !important;
-  margin: 0 0 1rem 0rem !important;
-  padding: 0 !important;
-}
-li.notion-list-item:before {
-  display: inline-block !important;
-  content: " ";
-  width: 10px !important;
-  height: 10px !important;
-  vertical-align: middle !important;
-  margin: 0 0.8rem 0.15rem 0 !important;
-  border: var(--circle) !important;
-  border-radius: 9999px !important;
-  background: transparent !important;
-}
-
-@media (prefers-color-scheme: dark) {
-  li.notion-list-item:before {
-    border: var(--circle) !important;
-  }
 }
 
 /* Button styles */
@@ -209,6 +134,84 @@ li.notion-list-item:before {
 .notion-callout a.link:hover {
   background-color: var(--secondary-color) !important;
   opacity: 1 !important;
+}
+
+/* Link styles */
+.notion-semantic-string .link {
+  border-bottom: none !important;
+  opacity: 1 !important;
+  transition: opacity 0.2s ease-in-out !important;
+}
+.notion-semantic-string .link:hover {
+  opacity: 0.5 !important;
+}
+.notion-column a[target="_blank"]:after {
+  display: inline-block !important;
+  content: " " !important;
+  background-image: var(--link-arrow) !important;
+  background-size: var(--font-size) var(--font-size) !important;
+  width: var(--font-size) !important;
+  height: var(--font-size) !important;
+  margin-left: 0.09rem !important;
+  vertical-align: middle !important;
+}
+
+/* Back button styles */
+a.notion-link[href="/"] {
+  font-size: 0;
+  display: block;
+  margin-bottom: calc(var(--spacer) * 2);
+}
+
+a.notion-link[href="/"]:before {
+  display: inline-block;
+  content: "← " !important;
+  font-size: var(--font-size) !important;
+}
+
+a.notion-link[href="/"]:after {
+  content: "Back";
+  display: inline-block;
+  font-size: var(--font-size) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .notion-column a[target="_blank"]:after {
+    background-image: var(--link-arrow) !important;
+  }
+}
+
+/* Hidden divider so it can be used as a spacer */
+#page-index .notion-divider {
+  border: 1px solid transparent;
+  padding: 0;
+  margin: auto 0 0 0;
+}
+
+/* Bullet list styles */
+ul.notion-bulleted-list {
+  list-style: none !important;
+  list-style-position: outside !important;
+  margin: 0 0 1rem 0rem !important;
+  padding: 0 !important;
+}
+
+li.notion-list-item:before {
+  display: inline-block !important;
+  content: " ";
+  width: 10px !important;
+  height: 10px !important;
+  vertical-align: middle !important;
+  margin: 0 0.8rem 0.15rem 0 !important;
+  border: var(--circle) !important;
+  border-radius: 9999px !important;
+  background: transparent !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  li.notion-list-item:before {
+    border: var(--circle) !important;
+  }
 }
 
 /* ———————————————————————————————— */
@@ -278,6 +281,11 @@ li.notion-list-item:before {
   padding-bottom: 0 !important;
 }
 
+/* ———————————————————————————————— */
+/* Photo gallery */
+/* ———————————————————————————————— */
+
+
 @media screen and (min-width: 2100px) {
   .notion-collection-gallery {
     column-count: 5 !important;
@@ -290,9 +298,16 @@ li.notion-list-item:before {
   }
 }
 
-@media screen and (max-width: 1294px) {
+@media screen and (min-width: 1300px) {
   .notion-collection-gallery {
     column-count: 3 !important;
+  }
+}
+
+
+@media screen and (min-width: 996px) {
+  .notion-collection-gallery {
+    column-count: 2 !important;
   }
 }
 
@@ -366,116 +381,11 @@ li.notion-list-item:before {
   }
 }
 
-a.notion-link[href="/"] {
-  font-size: 0;
-  display: block;
-  margin-bottom: calc(var(--spacer) * 2);
-}
-
-a.notion-link[href="/"]:before {
-  display: inline-block;
-  content: "← " !important;
-  font-size: var(--font-size) !important;
-}
-
-a.notion-link[href="/"]:after {
-  content: "Back";
-  display: inline-block;
-  font-size: var(--font-size) !important;
-}
-
-/* ———————————————————————————————— */
-/* Light switch */
-/* ———————————————————————————————— */
-
-[data-theme="light"] {
-  --text-color: #222 !important;
-  --background-color: white !important;
-  --gray-text-color: rgba(34, 2, 0, 0.5) !important;
-  --secondary-color: #dcdcdc !important;
-  --circle: 1px solid #222 !important;
-  --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
-}
-[data-theme="dark"] {
-  --text-color: white !important;
-  --background-color: #121212 !important;
-  --gray-text-color: rgba(255, 255, 255, 0.5) !important;
-  --secondary-color: #555 !important;
-  --circle: 1px solid #efefef !important;
-  --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-dark.svg") !important;
-}
-
-.toggle-container {
-  position: fixed !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  margin: 0 0 var(--spacer) 35px !important;
-  z-index: 2 !important;
-}
-
-input.theme-switch[type="checkbox"] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-label {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 3.25rem;
-  height: 1.75rem;
-  background: white;
-  float: right;
-  border-radius: 9999px;
-  border: 1px solid var(--secondary-color);
-  position: relative;
-  background-image: url("https://code.benjaminhoppe.co/owl/images/moon.svg");
-  background-position: calc(100% - 5px) 5px;
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  z-index: 2;
-}
-
-label:after {
-  content: " ";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 1rem;
-  height: 1rem;
-  background: #121212;
-  border-radius: 9999px;
-  transition: 0.1s;
-}
-
-input:checked + label {
-  background: #121212;
-  border: 1px solid var(--secondary-color);
-  background-image: url("https://code.benjaminhoppe.co/owl/images/sun.svg");
-  background-position: 5px 5px;
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  z-index: 2;
-}
-
-input:checked + label:after {
-  background: white;
-}
-
-input:checked + label:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
-}
-
-label:active:after {
-  width: 2rem;
-}
-
 /* ———————————————————————————————— */
 /* Mobile styles */
 /* ———————————————————————————————— */
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 850px) {
   .notion-column:first-of-type {
     width: 100% !important;
     height: unset !important;
@@ -501,12 +411,5 @@ label:active:after {
   .notion-page__properties {
     max-width: 100%;
     margin-right: 0;
-  }
-  .toggle-container {
-    bottom: unset !important;
-    left: unset !important;
-    top: 0 !important;
-    right: 0 !important;
-    margin: var(--spacer) var(--spacer) 0 0 !important;
   }
 }
