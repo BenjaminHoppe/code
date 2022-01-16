@@ -20,25 +20,24 @@ const checkbox = document.getElementById('switch');
 document.addEventListener
   ("keydown", function(event) {
     if (event.key === "1") {
-      document.documentElement.setAttribute('data-theme', 'light');
-      localStorage.setItem('data-theme', 'light');
+      changeThemeToLight();
+      checkbox.checked = false;
     }
     if (event.key === "2") {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('data-theme', 'dark');
+      changeThemeToDark();
+      checkbox.checked = true;
     }
 });
 
-function changeThemeToDark () {
+function changeThemeToDark() {
   document.documentElement.setAttribute('data-theme', 'dark')
   localStorage.setItem('data-theme', 'dark')
 }
 
-function changeThemeToLight () {
+function changeThemeToLight() {
   document.documentElement.setAttribute('data-theme', 'light')
   localStorage.setItem('data-theme', 'light')
 }
-
 
 checkbox.addEventListener('change', (event) => {
   (event.target.checked) ? changeThemeToDark() : changeThemeToLight();
