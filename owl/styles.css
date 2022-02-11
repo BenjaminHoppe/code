@@ -337,11 +337,16 @@ li.notion-list-item:before {
   max-width: 100% !important;
 }
 
-div[id*="page-gallery"] .notion-root {
+div[id*="page"] .notion-root {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
   flex-direction: unset !important;
   justify-content: space-between !important;
+}
+
+div[id="page-index"] .notion-root {
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 .notion-page__properties {
