@@ -337,7 +337,7 @@ li.notion-list-item:before {
   max-width: 100% !important;
 }
 
-.page .notion-root {
+div[id*="page-gallery"] .notion-root {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
   flex-direction: unset !important;
