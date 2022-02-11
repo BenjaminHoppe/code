@@ -404,12 +404,13 @@ div[id="page-index"] .notion-root {
     justify-content: unset !important;
   }
   div[id*="page"] .notion-root {
-    display: grid !important;
     grid-template-columns: 1fr !important;
-    flex-direction: unset !important;
   }
   .notion-page__properties {
     max-width: 100%;
     margin-right: 0;
+  }
+  .notion-image.page-width {
+    max-width: 100% !important;
   }
 }
