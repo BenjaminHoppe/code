@@ -342,7 +342,6 @@ div[id*="page"] .notion-root {
   grid-template-columns: 1fr 1fr !important;
   flex-direction: unset !important;
   justify-content: space-between !important;
-  justify-self: end;
 }
 
 div[id="page-index"] .notion-root {
@@ -364,6 +363,7 @@ div[id="page-index"] .notion-root {
 .notion-image {
   margin-top: 0 !important;
   margin-bottom: var(--spacer) !important;
+  justify-self: end;
 }
 
 .notion-image.page-width {
