@@ -342,6 +342,7 @@ div[id*="page"] .notion-root {
   grid-template-columns: 1fr 1fr !important;
   flex-direction: unset !important;
   justify-content: space-between !important;
+  justify-self: end;
 }
 
 div[id="page-index"] .notion-root {
