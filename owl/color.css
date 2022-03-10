@@ -3,126 +3,133 @@
 /* ———————————————————————————————— */
 
 :root {
-    --text-color: #222 !important;
-    --background-color: white !important;
-    --gray-text-color: rgba(34, 2, 0, 0.5) !important;
-    --secondary-color: #dcdcdc !important;
-    --circle: 1px solid #222 !important;
-    --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
-    --font-size: 17px !important;
-    --spacer: 40px !important;
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --text-color: #efefef !important;
-      --background-color: #121212 !important;
-      --gray-text-color: rgba(255, 255, 255, 0.5) !important;
-      --secondary-color: #555 !important;
-      --circle: 1px solid #efefef !important;
-      --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-dark.svg") !important;
-      --font-size: 17px !important;
-    }
-  }
+  --text-color: #222 !important;
+  --background-color: white !important;
+  --gray-text-color: rgba(34, 2, 0, 0.5) !important;
+  --secondary-color: #dcdcdc !important;
+  --circle: 1px solid #222 !important;
+  --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
+  --font-size: 17px !important;
+  --spacer: 40px !important;
+}
 
-  /* ———————————————————————————————— */
-/* Toggle switch */
-/* ———————————————————————————————— */
-
-[data-theme="light"] {
-    --text-color: #222 !important;
-    --background-color: white !important;
-    --gray-text-color: rgba(34, 2, 0, 0.5) !important;
-    --secondary-color: #dcdcdc !important;
-    --circle: 1px solid #222 !important;
-    --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
-  }
-  [data-theme="dark"] {
-    --text-color: white !important;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #efefef !important;
     --background-color: #121212 !important;
     --gray-text-color: rgba(255, 255, 255, 0.5) !important;
     --secondary-color: #555 !important;
     --circle: 1px solid #efefef !important;
     --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-dark.svg") !important;
   }
-  
-  .toggle-container {
-    position: fixed !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    margin: 0 0 var(--spacer) 35px !important;
-    z-index: 2 !important;
-  }
-  
-  input.theme-switch[type="checkbox"] {
-    height: 0;
-    width: 0;
-    visibility: hidden;
-  }
-  
-  label {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 3.25rem;
-    height: 1.75rem;
-    background: white;
-    float: right;
-    border-radius: 9999px;
-    border: 1px solid var(--secondary-color);
-    position: relative;
-    background-image: url("https://code.benjaminhoppe.co/owl/images/moon.svg");
-    background-position: calc(100% - 5px) 5px;
-    background-size: 1rem;
-    background-repeat: no-repeat;
-    z-index: 2;
-  }
-  
-  label:after {
-    content: " ";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 1rem;
-    height: 1rem;
-    background: #121212;
-    border-radius: 9999px;
-    transition: 0.1s;
-  }
-  
-  input:checked + label {
-    background: #121212;
-    border: 1px solid var(--secondary-color);
-    background-image: url("https://code.benjaminhoppe.co/owl/images/sun.svg");
-    background-position: 5px 5px;
-    background-size: 1rem;
-    background-repeat: no-repeat;
-    z-index: 2;
-  }
-  
-  input:checked + label:after {
-    background: white;
-  }
-  
-  input:checked + label:after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
-  }
-  
-  label:active:after {
-    width: 2rem;
-  }
+}
+
+/* ———————————————————————————————— */
+/* Toggle switch */
+/* ———————————————————————————————— */
+
+[data-theme="light"] {
+  --text-color: #222 !important;
+  --background-color: white !important;
+  --gray-text-color: rgba(34, 2, 0, 0.5) !important;
+  --secondary-color: #dcdcdc !important;
+  --circle: 1px solid #222 !important;
+  --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-light.svg") !important;
+}
+[data-theme="dark"] {
+  --text-color: white !important;
+  --background-color: #121212 !important;
+  --gray-text-color: rgba(255, 255, 255, 0.5) !important;
+  --secondary-color: #555 !important;
+  --circle: 1px solid #efefef !important;
+  --link-arrow: url("https://code.benjaminhoppe.co/owl/images/arrow-up-right-dark.svg") !important;
+}
+
+.notion-property__text a {
+  color: var(--secondary-color);
+  transition: color 0.2s ease-in-out !important;
+}
+
+.notion-property__text a:hover {
+  color: var(--text-color);
+}
+
+.toggle-container {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  margin: 0 0 var(--spacer) 35px !important;
+  z-index: 2 !important;
+}
+
+input.theme-switch[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 3.25rem;
+  height: 1.75rem;
+  background: white;
+  float: right;
+  border-radius: 9999px;
+  border: 1px solid var(--secondary-color);
+  position: relative;
+  background-image: url("https://code.benjaminhoppe.co/owl/images/moon.svg");
+  background-position: calc(100% - 5px) 5px;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+label:after {
+  content: " ";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 1rem;
+  height: 1rem;
+  background: #121212;
+  border-radius: 9999px;
+  transition: 0.1s;
+}
+
+input:checked + label {
+  background: #121212;
+  border: 1px solid var(--secondary-color);
+  background-image: url("https://code.benjaminhoppe.co/owl/images/sun.svg");
+  background-position: 5px 5px;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+input:checked + label:after {
+  background: white;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 2rem;
+}
 
 /* ———————————————————————————————— */
 /* Mobile styles */
 /* ———————————————————————————————— */
 
 @media screen and (max-width: 850px) {
-    .toggle-container {
-      bottom: unset !important;
-      left: unset !important;
-      top: 0 !important;
-      right: 0 !important;
-      margin: var(--spacer) var(--spacer) 0 0 !important;
-    }
+  .toggle-container {
+    bottom: unset !important;
+    left: unset !important;
+    top: 0 !important;
+    right: 0 !important;
+    margin: var(--spacer) var(--spacer) 0 0 !important;
   }
-  
+}
