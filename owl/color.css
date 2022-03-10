@@ -46,7 +46,7 @@
 }
 
 .notion-property__text a {
-  color: var(--secondary-color);
+  color: var(--gray-text-color) !important;
   transition: color 0.2s ease-in-out !important;
 }
 
