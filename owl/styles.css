@@ -275,8 +275,8 @@ li.notion-list-item:before {
   padding-bottom: 0 !important;
 }
 
-.notion-property, .notion-property__title {
-    display: none !important;
+.notion-property__title {
+  display: none !important;
 }
 
 /* Photo gallery media queries */
