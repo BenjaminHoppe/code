@@ -260,6 +260,7 @@ li.notion-list-item:before {
 .notion-collection-card__cover {
   height: auto !important;
   max-height: none !important;
+  border-bottom: 0px !important;
 }
 
 .notion-collection-card__cover.large > * {
@@ -272,6 +273,10 @@ li.notion-list-item:before {
   width: 100% !important;
   border-radius: 0 !important;
   padding-bottom: 0 !important;
+}
+
+.notion-property, .notion-property__title {
+    display: none !important;
 }
 
 /* Photo gallery media queries */
