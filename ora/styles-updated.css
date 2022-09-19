@@ -195,9 +195,10 @@ code {
     max-height: 450px !important;
 }
 
-#page-about img[style] {
+/* So this doesn't actually do a fucking thing */
+/* #page-about img[style] {
     object-fit: cover !important;
-}
+} */
 
 /*—————————————————————————————————————————————*/
 /* Blog post page */
