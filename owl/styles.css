@@ -93,7 +93,7 @@ p {
   position: fixed !important;
 }
 
-.notion-column:first-of-type > .notion-bulleted-list {
+.notion-column:first-of-type>.notion-bulleted-list {
   margin-bottom: 0 !important;
 }
 
@@ -102,19 +102,24 @@ p {
   padding: 0 !important;
   margin: 2rem 0 !important;
 }
+
 .notion-callout__icon {
   display: none !important;
 }
+
 .notion-callout.border {
   border: 0 !important;
 }
+
 .notion-callout .link[target="_blank"]:after {
   display: none !important;
 }
+
 .notion-callout__content {
   margin: 0 !important;
   padding: 1rem 1rem 1rem 0 !important;
 }
+
 .notion-callout a.link {
   border-bottom: none !important;
   background-color: tranparent !important;
@@ -124,6 +129,7 @@ p {
   color: var(--text-color) !important;
   transition: background-color 0.2s ease-in-out !important;
 }
+
 .notion-callout a.link:hover {
   background-color: var(--secondary-color) !important;
   opacity: 1 !important;
@@ -135,9 +141,11 @@ p {
   opacity: 1 !important;
   transition: opacity 0.2s ease-in-out !important;
 }
+
 .notion-semantic-string .link:hover {
   opacity: 0.5 !important;
 }
+
 .notion-column a[target="_blank"]:after {
   display: inline-block !important;
   content: " " !important;
@@ -263,7 +271,7 @@ li.notion-list-item:before {
   border-bottom: 0px !important;
 }
 
-.notion-collection-card__cover.large > * {
+.notion-collection-card__cover.large>* {
   position: relative !important;
 }
 
@@ -309,6 +317,7 @@ li.notion-list-item:before {
     max-width: 100% !important;
     width: 100% !important;
   }
+
   .notion-collection-gallery {
     column-count: 1 !important;
   }
@@ -401,20 +410,29 @@ div[id="page-index"] .notion-root {
   .notion-collection-gallery {
     max-height: unset !important;
   }
+
   .super-content {
     padding: var(--spacer) !important;
   }
+
   .notion-root {
     flex-direction: column !important;
     justify-content: unset !important;
   }
+
   div[id*="page"] .notion-root {
     grid-template-columns: 1fr !important;
   }
+
   .notion-page__properties {
     max-width: 100%;
     margin-right: 0;
   }
+
+  .notion-page__property {
+    grid-template-columns: 100% 1fr !important;
+  }
+
   .notion-image.page-width {
     max-width: 100% !important;
   }
