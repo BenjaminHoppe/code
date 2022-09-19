@@ -27,7 +27,7 @@
 
 .notion-collection-card {
   display: flex !important;
-  flex-direction: column-reverse  !important;
+  flex-direction: column-reverse !important;
   align-items: flex-start !important;
   justify-content: flex-start !important;
   box-shadow: none !important;
@@ -67,8 +67,13 @@
 .notion-collection-card__content {
   padding: 32px 32px 4px 32px !important;
   font-size: 14px !important;
+  flex-direction: column-reverse;
+  display: flex;  
 }
 
+.notion-property__date {
+  margin-bottom: 8px;
+}
 .notion-semantic-string .date {
   color: #fff !important;
 }
@@ -76,7 +81,7 @@
 /* card title  */
 
 .notion-property__title {
-  padding: 0px 32px 32px 32px !important;
+  padding: 0px 32px 32px 0px !important;
   color: #fff !important;
   font-size: 24px !important;
 }

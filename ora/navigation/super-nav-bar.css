@@ -29,6 +29,10 @@
   right: 28px !important;
 }
 
+.super-navbar__logo-text[style] {
+  font-size: 20px !important;
+}
+
 /* Mobile  */
 
 @media screen and (max-width: 600px) {
