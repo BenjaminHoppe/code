@@ -370,6 +370,13 @@ notion-navbar__title:hover {
   margin: 48px 0px
 }
 
+/* Hot fixes */
+
+.bg-green-light {
+  background-color: transparent !important;
+}
+
+
 /*—————————————————————————————————————————————*/
 /* Mobile styles  */
 
