@@ -223,10 +223,24 @@ code {
   margin: 48px 0px
 }
 
+/* ———————————————————————————————— */
 /* Hot fixes */
 
+/* ———————————————————————————————— */
 .bg-green-light {
   background-color: transparent !important;
+}
+
+/* ———————————————————————————————— */
+/* Hide scroll bar */
+/* ———————————————————————————————— */
+
+html ::-webkit-scrollbar {
+  display: none !important;
+}
+
+html ::-webkit-scrollbar-thumb {
+  display: none !important;
 }
 
 

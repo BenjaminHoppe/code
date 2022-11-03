@@ -376,6 +376,17 @@ notion-navbar__title:hover {
   background-color: transparent !important;
 }
 
+/* ———————————————————————————————— */
+/* Hide scroll bar */
+/* ———————————————————————————————— */
+
+html ::-webkit-scrollbar {
+  display: none !important;
+}
+
+html ::-webkit-scrollbar-thumb {
+  display: none !important;
+}
 
 /*—————————————————————————————————————————————*/
 /* Mobile styles  */

@@ -391,6 +391,18 @@ div[id="page-index"] .notion-root {
 }
 
 /* ———————————————————————————————— */
+/* Hide scroll bar */
+/* ———————————————————————————————— */
+
+html ::-webkit-scrollbar {
+  display: none !important;
+}
+
+html ::-webkit-scrollbar-thumb {
+  display: none !important;
+}
+
+/* ———————————————————————————————— */
 /* Mobile styles */
 /* ———————————————————————————————— */
 
