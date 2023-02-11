@@ -449,3 +449,47 @@ html ::-webkit-scrollbar-thumb {
     max-width: 100% !important;
   }
 }
+
+/* ———————————————————————————————— */
+/* Fresh eyes 2023 update */
+/* ———————————————————————————————— */
+
+#page-index .notion-breadcrumb {
+  display: none !important;
+}
+
+.notion-navbar,
+.minimal {
+  display: none !important;
+}
+
+.simple {
+  display: flex !important;
+}
+
+.balanced {
+  display: flex !important;
+  padding: calc(env(safe-area-inset-right) + var(--spacer)) 0 !important;
+}
+
+.super-navbar__content {
+  padding-left: calc(env(safe-area-inset-left) + var(--spacer)) !important;
+  padding-right: calc(env(safe-area-inset-right) + var(--spacer)) !important;
+}
+
+.super-navbar__item {
+  font-weight: 400 !important;
+}
+
+.super-navbar__cta {
+  border: 1px solid var(--secondary-color) !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.super-navbar__actions {
+  padding: 0 !important;
+}
+
+.balanced .super-navbar__cta {
+  padding: 1rem 2rem !important;
+}
