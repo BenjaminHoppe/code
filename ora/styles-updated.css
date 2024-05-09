@@ -288,4 +288,9 @@ html ::-webkit-scrollbar-thumb {
   .notion-header.page {
       padding: 0px 24px !important;
     }
+
+    /* May 9, 2024 updates */
+  .notion-root {
+      padding: 0px 48px !important;
+    }
 }
