@@ -3,7 +3,7 @@
   border: 1px solid var(--divider-color) !important;
   padding: 12px 24px !important;
   border-radius: 50px !important;
-  cursor pointer;
+  cursor: pointer;
   transition: var(--transition) !important;
 }
 
@@ -21,7 +21,7 @@
     border: none !important;
     padding: 0px !important;
     border-radius: 0px!important;
-    cursor pointer;
+    cursor: pointer;
     background-color: none !important;
 
   }
