@@ -1,5 +1,6 @@
 /*—————————————————————————————————————————————*/
 /* May 9, 2024 Updates */
+/* Howdy */
 
 #page-index .super-content-wrapper {
   max-width: 1344px !important;
@@ -83,7 +84,7 @@ body {
 @-webkit-keyframes fadeInUp { 0% { transform: translate3d(0,80px,0); } 100% { transform: translate3d(0,0,0); } }
 
 /* Super wrapper*/
-#page-index .super-content.max-width {
+#page-index .super-content.max-width, .super-content-wrapper {
   max-width: 1344px !important;
   padding: 0px 48px !important;
 }
