@@ -5,7 +5,10 @@
 
 .notion-root {
   max-width: 1344px !important;
-  padding: 0px 48px !important;
+  padding-right: 48px !important;
+  padding-left: 48px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .notion-collection-board__column-header {
