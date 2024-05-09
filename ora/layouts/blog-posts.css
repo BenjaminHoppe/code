@@ -1,4 +1,13 @@
 /*—————————————————————————————————————————————*/
+
+
+.super-content-wrapper {
+    max-width: 996px !important;
+    margin: 0px auto !important;
+}
+
+
+
 /* Blog cards container */
 
 
