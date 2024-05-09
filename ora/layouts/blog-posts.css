@@ -1,7 +1,7 @@
 /*—————————————————————————————————————————————*/
 
 
-.super-content-wrapper {
+:not(#page-index).super-content-wrapper {
     max-width: 996px !important;
     margin: 0px auto !important;
 }
