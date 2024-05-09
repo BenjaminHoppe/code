@@ -1,5 +1,12 @@
 /*—————————————————————————————————————————————*/
 /* Blog cards container */
+/*—————————————————————————————————————————————*/
+/* May 9, 2024 Updates */
+
+.notion-root {
+  max-width: 1250px !important;
+}
+
 
 .notion-collection-board__column-header {
   display: none !important;
