@@ -4,9 +4,9 @@
 /* May 9, 2024 Updates */
 
 .notion-root {
-  max-width: 1250px !important;
+  max-width: 1344px !important;
+  padding: 0px 48px !important;
 }
-
 
 .notion-collection-board__column-header {
   display: none !important;
