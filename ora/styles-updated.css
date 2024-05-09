@@ -1,7 +1,7 @@
 /*—————————————————————————————————————————————*/
 /* May 9, 2024 Updates */
 
-.notion-root.max-width {
+.notion-root, .max-width {
   max-width: 1250px !important;
 }
 
