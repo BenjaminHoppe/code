@@ -439,8 +439,13 @@ html ::-webkit-scrollbar-thumb {
     display: flex !important;
     flex-direction: column!important;
     width: 100% !important;
+  }
+
+  .notion-image.page-width {
+    margin-top: 48px !important;
 }
 
+/* -------------------- */
   .notion-column:first-of-type {
     width: 100% !important;
     height: unset !important;
