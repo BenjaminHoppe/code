@@ -433,6 +433,14 @@ html ::-webkit-scrollbar-thumb {
 /* ———————————————————————————————— */
 
 @media screen and (max-width: 850px) {
+
+  /* Fixes image page on mobile */
+  #block-gallery-image {
+    display: flex !important;
+    flex-direction: column!important;
+    width: 100% !important;
+}
+
   .notion-column:first-of-type {
     width: 100% !important;
     height: unset !important;
