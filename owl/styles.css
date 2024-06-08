@@ -60,6 +60,14 @@ p {
 /* Super styles */
 /* ———————————————————————————————— */
 
+
+
+/* Fixes width and padding issues */
+.notion-root {
+  padding-left: unset !important;
+  padding-right: unset !important;
+}
+
 /* Hides Notion elements */
 .super-navbar,
 .notion-header__title,
