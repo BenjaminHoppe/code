@@ -450,7 +450,7 @@ html ::-webkit-scrollbar-thumb {
   }
 
   .super-content {
-    padding: var(--spacer) !important;
+    padding: 24px !important;
   }
 
   .notion-root {

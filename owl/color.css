@@ -130,6 +130,7 @@ label:active:after {
     left: unset !important;
     top: 0 !important;
     right: 0 !important;
-    margin: var(--spacer) var(--spacer) 0 0 !important;
+    /* margin: var(--spacer) var(--spacer) 0 0 !important; */
+    margin: 24px 24px 0px 0px !important;
   }
 }
