@@ -74,16 +74,13 @@ p {
   margin-left: unset !important;
   margin-right: unset !important;
   max-width: unset !important;
+  display: flex !important;
+  flex-direction: row !important;
+  width: 100% !important;
 }
 
 .notion-page__properties {
   margin-right: auto !important;
-}
-
-#block-gallery-image {
-  display: flex !important;
-  flex-direction: row !important;
-  width: 100% !important;
 }
 
 /* Hides Notion elements */
