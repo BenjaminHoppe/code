@@ -100,6 +100,17 @@ p {
   padding-top: var(--spacer) !important;
 }
 
+/* Block quote to be used as wrapper */
+.notion-quote {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  max-width: 600px;
+}
+
 /* ———————————————————————————————— */
 /* Info column */
 /* ———————————————————————————————— */
@@ -408,7 +419,7 @@ div[id="page-index"] .notion-root {
 }
 
 @media screen and (min-width: 1773px) {
-  .notion-image.page-width {
+  .notion-image.page-width, .notion-quote {
     max-width: 1000px !important;
   }
 }
@@ -438,7 +449,7 @@ html ::-webkit-scrollbar-thumb {
     width: 100% !important;
   }
 
-  .notion-image.page-width {
+  .notion-image.page-width, .notion-quote {
     margin-top: 48px !important;
 }
 
@@ -529,3 +540,7 @@ html ::-webkit-scrollbar-thumb {
 .balanced .super-navbar__cta {
   padding: 1rem 2rem !important;
 }
+
+
+
+
